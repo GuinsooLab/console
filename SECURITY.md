@@ -24,7 +24,7 @@ for the past five days please contact the security team directly:
 
 ### Disclosure Process
 
-MinIO Console uses the following disclosure process:
+GuinsooLab Console uses the following disclosure process:
 
 1. Once the security report is received one member of the security team tries to verify and reproduce
    the issue and determines the impact it has.
@@ -33,8 +33,8 @@ MinIO Console uses the following disclosure process:
 3. Code is audited to find any potential similar problems.
 4. Fixes are prepared for the latest release.
 5. On the date that the fixes are applied a security advisory will be published on https://blog.min.io.
-   Please inform us in your report email whether MinIO Console should mention your contribution w.r.t. fixing
-   the security issue. By default MinIO Console will **not** publish this information to protect your privacy.
+   Please inform us in your report email whether GuinsooLab Console should mention your contribution w.r.t. fixing
+   the security issue. By default GuinsooLab Console will **not** publish this information to protect your privacy.
 
 This process can take some time, especially when coordination is required with maintainers of other projects.
 Every effort will be made to handle the bug in as timely a manner as possible, however it's important that we

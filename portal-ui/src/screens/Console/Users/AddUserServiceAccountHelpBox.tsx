@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+// This file is part of GuinsooLab Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -108,7 +108,7 @@ const AddUserServiceAccountHelpBox = () => {
           </Box>
           <Box sx={{ paddingTop: "10px" }}>
             Service Accounts support programmatic access by applications. You
-            cannot use a Service Account to log into the MinIO Console.
+            cannot use a Service Account to log into the GuinsooLab Console.
           </Box>
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>

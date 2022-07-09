@@ -114,7 +114,7 @@ mc admin policy add myminio/ consoleAdmin admin.json
 ### 3. Set the policy for the new `console` user
 
 ```sh
-mc admin policy set myminio consoleAdmin user=console
+mc admin policy set myGuinsooLab ConsoleAdmin user=console
 ```
 
 > NOTE: Additionally, you can create policies to limit the privileges for other `console` users, for example, if you want the user to only have access to dashboard, buckets, notifications and watch page, the policy should look like this:

@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of GuinsooLab Console Server
+// Copyright (c) 2020-2022 GuinsooLab, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -374,7 +374,7 @@ export const IAM_PAGES_PERMISSIONS = {
   [IAM_PAGES.TOOLS]: [
     IAM_SCOPES.S3_LISTEN_NOTIFICATIONS, // displays watch notifications
     IAM_SCOPES.S3_LISTEN_BUCKET_NOTIFICATIONS, // display watch notifications
-    IAM_SCOPES.ADMIN_GET_CONSOLE_LOG, // display minio console logs
+    IAM_SCOPES.ADMIN_GET_CONSOLE_LOG, // display GuinsooLab Console logs
     IAM_SCOPES.ADMIN_SERVER_TRACE, // display minio trace
     IAM_SCOPES.ADMIN_HEAL, // display heal
     IAM_SCOPES.ADMIN_HEALTH_INFO, // display diagnostics / display speedtest / display audit log
