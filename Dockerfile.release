@@ -1,0 +1,23 @@
+FROM registry.access.redhat.com/ubi8/ubi-minimal:8.5
+
+ARG TAG
+
+COPY CREDITS /licenses/CREDITS
+COPY LICENSE /licenses/LICENSE
+
+LABEL name="MinIO" \
+      vendor="MinIO Inc <dev@min.io>" \
+      maintainer="MinIO Inc <dev@min.io>" \
+      version="${TAG}" \
+      release="${TAG}" \
+      summary="A graphical user interface for MinIO" \
+      description="MinIO object storage is fundamentally different. Designed for performance and the S3 API, it is 100% open-source. MinIO is ideal for large, private cloud environments with stringent security requirements and delivers mission-critical availability across a diverse range of workloads."
+
+RUN \
+     microdnf update --nodocs && \
+     microdnf install ca-certificates --nodocs
+
+EXPOSE 9090
+COPY console /console
+
+ENTRYPOINT ["/console"]

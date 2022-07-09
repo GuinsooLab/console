@@ -1,29 +1,42 @@
-#
-# Copyright (2021) The Delta Lake Project Authors.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+FROM node:17 as uilayer
 
-FROM python:3.7.3-stretch
+WORKDIR /app
 
-RUN apt-get update && apt-get -y install openjdk-8-jdk
+COPY ./portal-ui/package.json ./
+COPY ./portal-ui/yarn.lock ./
+RUN yarn install
 
-RUN pip install pyspark==3.2.0
+COPY ./portal-ui .
 
-RUN pip install mypy==0.910
+RUN make build-static
 
-RUN pip install importlib_metadata==3.10.0
+USER node
 
-# Do not add any non-deterministic changes (e.g., copy from files 
-# from repo) in this Dockerfile, so that the  docker image 
-# generated from this can be reused across builds.
+FROM golang:1.18 as golayer
+
+RUN apt-get update -y && apt-get install -y ca-certificates
+
+ADD go.mod /go/src/github.com/minio/console/go.mod
+ADD go.sum /go/src/github.com/minio/console/go.sum
+WORKDIR /go/src/github.com/minio/console/
+
+# Get dependencies - will also be cached if we won't change mod/sum
+RUN go mod download
+
+ADD . /go/src/github.com/minio/console/
+WORKDIR /go/src/github.com/minio/console/
+
+ENV CGO_ENABLED=0
+
+COPY --from=uilayer /app/build /go/src/github.com/minio/console/portal-ui/build
+RUN go build --tags=kqueue,operator -ldflags "-w -s" -a -o console ./cmd/console
+
+FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6
+MAINTAINER MinIO Development "dev@min.io"
+EXPOSE 9090
+
+
+COPY --from=golayer /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=golayer /go/src/github.com/minio/console/console .
+
+ENTRYPOINT ["/console"]
