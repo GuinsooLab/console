@@ -432,7 +432,8 @@ const Login = () => {
             <Box className={classes.iconLogo}>{consoleText}</Box>
             <Box
               style={{
-                font: "normal normal normal 20px/24px Lato",
+                font: "normal normal normal 16px/20px Lato",
+                marginTop: 4,
               }}
             >
               Console for GuinsooLab

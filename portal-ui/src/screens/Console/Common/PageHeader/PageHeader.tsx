@@ -35,11 +35,11 @@ const styles = (theme: Theme) =>
   createStyles({
     headerContainer: {
       width: "100%",
-      minHeight: 83,
+      minHeight: 48,
       display: "flex",
       backgroundColor: "#fff",
       left: 0,
-      boxShadow: "rgba(0,0,0,.08) 0 3px 10px",
+      borderBottom: "1px solid #d9d9d999",
     },
     label: {
       display: "flex",
@@ -54,6 +54,7 @@ const styles = (theme: Theme) =>
       fill: theme.palette.primary.main,
       "& .min-icon": {
         width: 120,
+        height: 40,
       },
     },
     middleComponent: {

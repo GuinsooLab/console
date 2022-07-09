@@ -68,14 +68,13 @@ const ConsoleMenuList = ({
         justifyContent: "space-between",
         height: "100%",
         flex: 1,
-        paddingRight: "8px",
 
         "&.wide": {
-          marginLeft: "30px",
+          paddingLeft: "8px",
         },
 
         "&.mini": {
-          marginLeft: "10px",
+          marginLeft: "8px",
         },
       }}
     >
@@ -91,7 +90,7 @@ const ConsoleMenuList = ({
             flexFlow: "column",
 
             "& .main-menu-item": {
-              marginBottom: "20px",
+              paddingLeft: 8,
             },
           },
         }}

@@ -30,32 +30,32 @@ import {
   BucketsMenuIcon,
   DrivesMenuIcon,
   GroupsMenuIcon,
-  HealthMenuIcon,
+  // HealthMenuIcon,
   IdentityMenuIcon,
-  InspectMenuIcon,
+  // InspectMenuIcon,
   LogsMenuIcon,
   MetricsMenuIcon,
   MonitoringMenuIcon,
-  PerformanceMenuIcon,
-  ProfileMenuIcon,
-  SupportMenuIcon,
+  // PerformanceMenuIcon,
+  // ProfileMenuIcon,
+  // SupportMenuIcon,
   TraceMenuIcon,
   UsersMenuIcon,
 } from "../../icons/SidebarMenus";
 import { hasPermission } from "../../common/SecureComponent";
 import WatchIcon from "../../icons/WatchIcon";
-import RegisterMenuIcon from "../../icons/SidebarMenus/RegisterMenuIcon";
+// import RegisterMenuIcon from "../../icons/SidebarMenus/RegisterMenuIcon";
 import {
-  DocumentationIcon,
+  // DocumentationIcon,
   LambdaIcon,
-  LicenseIcon,
+  // LicenseIcon,
   RecoverIcon,
   TenantsOutlineIcon,
   TiersIcon,
 } from "../../icons";
 import SettingsIcon from "../../icons/SettingsIcon";
-import React from "react";
-import LicenseBadge from "./Menu/LicenseBadge";
+// import React from "react";
+// import LicenseBadge from "./Menu/LicenseBadge";
 
 export const validRoutes = (
   features: string[] | null | undefined,
@@ -191,82 +191,82 @@ export const validRoutes = (
       id: "configurations",
       icon: SettingsIcon,
     },
-    {
-      name: "Support",
-      id: "support",
-      icon: SupportMenuIcon,
-      children: [
-        {
-          name: "Register",
-          id: "register",
-          component: NavLink,
-          icon: RegisterMenuIcon,
-          to: IAM_PAGES.REGISTER_SUPPORT,
-        },
-        {
-          name: "Health",
-          id: "diagnostics",
-          component: NavLink,
-          icon: HealthMenuIcon,
-          to: IAM_PAGES.TOOLS_DIAGNOSTICS,
-        },
-        {
-          name: "Performance",
-          id: "performance",
-          component: NavLink,
-          icon: PerformanceMenuIcon,
-          to: IAM_PAGES.TOOLS_SPEEDTEST,
-        },
-        {
-          name: "Profile",
-          id: "profile",
-          component: NavLink,
-          icon: ProfileMenuIcon,
-          to: IAM_PAGES.PROFILE,
-        },
-
-        // {
-        //   name: "Call Home",
-        //   id: "callhome",
-        //   component: NavLink,
-        //   icon: CallHomeMenuIcon,
-        //   to: IAM_PAGES.CALL_HOME,
-        // },
-        {
-          name: "Inspect",
-          id: "inspectObjects",
-          to: IAM_PAGES.SUPPORT_INSPECT,
-          icon: InspectMenuIcon,
-          component: NavLink,
-        },
-      ],
-    },
-    {
-      component: NavLink,
-      to: IAM_PAGES.LICENSE,
-      name: "License",
-      id: "license",
-      icon: LicenseIcon,
-      badge: LicenseBadge,
-      forceDisplay: true,
-    },
-    {
-      type: "item",
-      component: NavLink,
-      to: IAM_PAGES.DOCUMENTATION,
-      name: "Documentation",
-      icon: DocumentationIcon,
-      forceDisplay: true,
-      onClick: (
-        e:
-          | React.MouseEvent<HTMLLIElement>
-          | React.MouseEvent<HTMLAnchorElement>
-          | React.MouseEvent<HTMLDivElement>
-      ) => {
-        e.preventDefault();
-        window.open("https://docs.min.io/?ref=con", "_blank");
-      },
-    },
+    // {
+    //   name: "Support",
+    //   id: "support",
+    //   icon: SupportMenuIcon,
+    //   children: [
+    //     {
+    //       name: "Register",
+    //       id: "register",
+    //       component: NavLink,
+    //       icon: RegisterMenuIcon,
+    //       to: IAM_PAGES.REGISTER_SUPPORT,
+    //     },
+    //     {
+    //       name: "Health",
+    //       id: "diagnostics",
+    //       component: NavLink,
+    //       icon: HealthMenuIcon,
+    //       to: IAM_PAGES.TOOLS_DIAGNOSTICS,
+    //     },
+    //     {
+    //       name: "Performance",
+    //       id: "performance",
+    //       component: NavLink,
+    //       icon: PerformanceMenuIcon,
+    //       to: IAM_PAGES.TOOLS_SPEEDTEST,
+    //     },
+    //     {
+    //       name: "Profile",
+    //       id: "profile",
+    //       component: NavLink,
+    //       icon: ProfileMenuIcon,
+    //       to: IAM_PAGES.PROFILE,
+    //     },
+    //
+    //     // {
+    //     //   name: "Call Home",
+    //     //   id: "callhome",
+    //     //   component: NavLink,
+    //     //   icon: CallHomeMenuIcon,
+    //     //   to: IAM_PAGES.CALL_HOME,
+    //     // },
+    //     {
+    //       name: "Inspect",
+    //       id: "inspectObjects",
+    //       to: IAM_PAGES.SUPPORT_INSPECT,
+    //       icon: InspectMenuIcon,
+    //       component: NavLink,
+    //     },
+    //   ],
+    // },
+    // {
+    //   component: NavLink,
+    //   to: IAM_PAGES.LICENSE,
+    //   name: "License",
+    //   id: "license",
+    //   icon: LicenseIcon,
+    //   badge: LicenseBadge,
+    //   forceDisplay: true,
+    // },
+    // {
+    //   type: "item",
+    //   component: NavLink,
+    //   to: IAM_PAGES.DOCUMENTATION,
+    //   name: "Documentation",
+    //   icon: DocumentationIcon,
+    //   forceDisplay: true,
+    //   onClick: (
+    //     e:
+    //       | React.MouseEvent<HTMLLIElement>
+    //       | React.MouseEvent<HTMLAnchorElement>
+    //       | React.MouseEvent<HTMLDivElement>
+    //   ) => {
+    //     e.preventDefault();
+    //     window.open("https://docs.min.io/?ref=con", "_blank");
+    //   },
+    // },
   ];
 
   let operatorMenus: IMenuItem[] = [
@@ -280,35 +280,35 @@ export const validRoutes = (
       icon: TenantsOutlineIcon,
       forceDisplay: true,
     },
-    {
-      group: "Operator",
-      type: "item",
-      id: "License",
-      component: NavLink,
-      to: IAM_PAGES.LICENSE,
-      name: "License",
-      icon: LicenseIcon,
-      forceDisplay: true,
-    },
-    {
-      group: "Operator",
-      type: "item",
-      id: "Documentation",
-      component: NavLink,
-      to: IAM_PAGES.DOCUMENTATION,
-      name: "Documentation",
-      icon: DocumentationIcon,
-      forceDisplay: true,
-      onClick: (
-        e:
-          | React.MouseEvent<HTMLLIElement>
-          | React.MouseEvent<HTMLAnchorElement>
-          | React.MouseEvent<HTMLDivElement>
-      ) => {
-        e.preventDefault();
-        window.open("https://docs.min.io/?ref=op", "_blank");
-      },
-    },
+    // {
+    //   group: "Operator",
+    //   type: "item",
+    //   id: "License",
+    //   component: NavLink,
+    //   to: IAM_PAGES.LICENSE,
+    //   name: "License",
+    //   icon: LicenseIcon,
+    //   forceDisplay: true,
+    // },
+    // {
+    //   group: "Operator",
+    //   type: "item",
+    //   id: "Documentation",
+    //   component: NavLink,
+    //   to: IAM_PAGES.DOCUMENTATION,
+    //   name: "Documentation",
+    //   icon: DocumentationIcon,
+    //   forceDisplay: true,
+    //   onClick: (
+    //     e:
+    //       | React.MouseEvent<HTMLLIElement>
+    //       | React.MouseEvent<HTMLAnchorElement>
+    //       | React.MouseEvent<HTMLDivElement>
+    //   ) => {
+    //     e.preventDefault();
+    //     window.open("https://docs.min.io/?ref=op", "_blank");
+    //   },
+    // },
   ];
 
   const allowedItems = (operatorMode ? operatorMenus : consoleMenus).filter(

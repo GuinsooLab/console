@@ -30,13 +30,13 @@ import { clearSession } from "../../../common/utils";
 import { baseUrl } from "../../../history";
 import api from "../../../common/api";
 
-import MenuToggle from "./MenuToggle";
+// import MenuToggle from "./MenuToggle";
 import ConsoleMenuList from "./ConsoleMenuList";
 import { validRoutes } from "../valid-routes";
-import { menuOpen, selOpMode, userLogged } from "../../../systemSlice";
+import { selOpMode, userLogged } from "../../../systemSlice";
 import { resetSession, selFeatures } from "../consoleSlice";
 
-const drawerWidth = 250;
+const drawerWidth = 270;
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -44,14 +44,11 @@ const styles = (theme: Theme) =>
       width: drawerWidth,
       flexShrink: 0,
       whiteSpace: "nowrap",
-      background:
-        "transparent linear-gradient(90deg, #073052 0%, #081C42 100%) 0% 0% no-repeat padding-box !important",
-      boxShadow: "0px 3px 7px #00000014",
       "& .MuiPaper-root": {
         backgroundColor: "inherit",
       },
       "& ::-webkit-scrollbar": {
-        width: "5px",
+        width: "1px",
       },
       "& ::-webkit-scrollbar-track": {
         background: "#F0F0F0",
@@ -67,11 +64,14 @@ const styles = (theme: Theme) =>
       },
     },
     drawerOpen: {
+      marginLeft: 60,
       width: drawerWidth,
       transition: theme.transitions.create("width", {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.enteringScreen,
       }),
+      borderRight: "1px solid #d9d9d999",
+      borderLeft: "1px solid #d9d9d999",
     },
     drawerClose: {
       transition: theme.transitions.create("width", {
@@ -136,12 +136,12 @@ const Menu = ({ classes }: IMenuProps) => {
         }),
       }}
     >
-      <MenuToggle
-        onToggle={(nextState) => {
-          dispatch(menuOpen(nextState));
-        }}
-        isOpen={sidebarOpen}
-      />
+      {/*<MenuToggle*/}
+      {/*  onToggle={(nextState) => {*/}
+      {/*    dispatch(menuOpen(nextState));*/}
+      {/*  }}*/}
+      {/*  isOpen={sidebarOpen}*/}
+      {/*/>*/}
 
       <ConsoleMenuList
         menuItems={allowedMenuItems}
