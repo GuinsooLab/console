@@ -1,6 +1,6 @@
-# Systemd service for MinIO Console
+# Systemd service for GuinsooLab Console
 
-Systemd script for MinIO Console.
+Systemd script for GuinsooLab Console.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Systemd script for MinIO Console.
 
 ## Create the Environment configuration file
 
-This file serves as input to MinIO Console systemd service.
+This file serves as input to GuinsooLab Console systemd service.
 
 ```sh
 $ cat <<EOT >> /etc/default/minio-console

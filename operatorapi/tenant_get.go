@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+// This file is part of GuinsooLab Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -104,7 +104,7 @@ func getTenantDetailsResponse(session *models.Principal, params operator_api.Ten
 	conSvc, err := k8sClient.getService(ctx, minTenant.Namespace, minTenant.ConsoleCIServiceName(), metav1.GetOptions{})
 	if err != nil {
 		// we can tolerate this errors
-		errors.LogError("Unable to get MinIO console service name: %v, continuing", err)
+		errors.LogError("Unable to get GuinsooLab Console service name: %v, continuing", err)
 	}
 
 	schema := "http"

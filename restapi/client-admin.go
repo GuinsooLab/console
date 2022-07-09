@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of GuinsooLab Console Server
+// Copyright (c) 2020-2022 GuinsooLab, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -33,7 +33,7 @@ import (
 	iampolicy "github.com/minio/pkg/iam/policy"
 )
 
-const globalAppName = "MinIO Console"
+const globalAppName = "GuinsooLab Console"
 
 // NewAdminClientWithInsecure gives a new madmin client interface either secure or insecure based on parameter
 func NewAdminClientWithInsecure(url, accessKey, secretKey, sessionToken string, insecure bool) (*madmin.AdminClient, *probe.Error) {

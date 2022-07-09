@@ -1,5 +1,5 @@
-// This file is part of MinIO Console Server
-// Copyright (c) 2021 MinIO, Inc.
+// This file is part of GuinsooLab Console Server
+// Copyright (c) 2020-2022 GuinsooLab, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -31,14 +31,12 @@ import {
   DocumentationIcon,
   DownloadIcon,
   LockIcon,
-  MinIOTierIconXs,
   OperatorLogo,
 } from "../../icons";
 import { spacingUtils } from "../Console/Common/FormComponents/common/styleLibrary";
 import CssBaseline from "@mui/material/CssBaseline";
 import { SupportMenuIcon } from "../../icons/SidebarMenus";
 import GithubIcon from "../../icons/GithubIcon";
-import clsx from "clsx";
 import Loader from "../Console/Common/Loader/Loader";
 import { AppState, useAppDispatch } from "../../store";
 import { useSelector } from "react-redux";
@@ -76,7 +74,8 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: 8,
     },
     linkHolder: {
-      marginTop: 20,
+      position: "absolute",
+      bottom: 20,
       font: "normal normal normal 14px/16px Lato",
     },
     miniLinks: {
@@ -205,6 +204,7 @@ const useStyles = makeStyles((theme: Theme) =>
     iconLogo: {
       "& .min-icon": {
         width: "100%",
+        height: "100%",
       },
     },
     ...spacingUtils,
@@ -252,9 +252,6 @@ const Login = () => {
     (state: AppState) => state.login.loadingFetchConfiguration
   );
 
-  const latestMinIOVersion = useSelector(
-    (state: AppState) => state.login.latestMinIOVersion
-  );
   const loadingVersion = useSelector(
     (state: AppState) => state.login.loadingVersion
   );
@@ -399,8 +396,8 @@ const Login = () => {
   const consoleText = isOperator ? <OperatorLogo /> : <ConsoleLogo />;
 
   const hyperLink = isOperator
-    ? "https://docs.min.io/minio/k8s/operator-console/operator-console.html?ref=con"
-    : "https://docs.min.io/minio/baremetal/console/minio-console.html?ref=con";
+    ? "https://ciusji.gitbook.io/guinsoolab/products/console"
+    : "https://ciusji.gitbook.io/guinsoolab/products/console";
 
   const theme = useTheme();
   return (
@@ -438,7 +435,7 @@ const Login = () => {
                 font: "normal normal normal 20px/24px Lato",
               }}
             >
-              Multicloud Object Storage
+              Console for GuinsooLab
             </Box>
           </Grid>
           <Grid
@@ -487,7 +484,7 @@ const Login = () => {
           <Grid item xs={12} className={classes.linkHolder}>
             <div className={classes.miniLinks}>
               <a
-                href="https://docs.min.io/?ref=con"
+                href="https://ciusji.gitbook.io/guinsoolab/products/console"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -495,7 +492,7 @@ const Login = () => {
               </a>
               <span className={classes.separator}>|</span>
               <a
-                href="https://github.com/minio/minio"
+                href="https://github.com/GuinsooLab"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -503,7 +500,7 @@ const Login = () => {
               </a>
               <span className={classes.separator}>|</span>
               <a
-                href="https://subnet.min.io/?ref=con"
+                href="https://ciusji.gitbook.io/guinsoolab/appendix/support"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -511,29 +508,11 @@ const Login = () => {
               </a>
               <span className={classes.separator}>|</span>
               <a
-                href="https://min.io/download/?ref=con"
+                href="https://guinsoolab.github.io/glab"
                 target="_blank"
                 rel="noreferrer"
               >
                 <DownloadIcon /> Download
-              </a>
-            </div>
-            <div className={clsx(classes.miniLinks, classes.miniLogo)}>
-              <a
-                href={"https://github.com/minio/minio/releases"}
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: 20,
-                }}
-              >
-                <MinIOTierIconXs /> <b>Latest Version:</b>&nbsp;
-                {!loadingVersion && latestMinIOVersion !== "" && (
-                  <React.Fragment>{latestMinIOVersion}</React.Fragment>
-                )}
               </a>
             </div>
           </Grid>
