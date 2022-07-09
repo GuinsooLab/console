@@ -4,7 +4,9 @@
    <small>Management UI for GuinsooLab</small>
 </div>
 
-# GuinsooLab Console
+# [GuinsooLab Console](https://guinsoolab.github.io/glab/)
+
+![arichitecture](assets/gdp-new.svg)
 
 GuinsooLab is an open-source storage framework that enables building a [Lakehouse architecture](http://cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs for Scala, Java, Rust, Ruby, and Python. 
 * See the [Delta Lake Documentation](https://docs.delta.io) for details.
@@ -26,6 +28,8 @@ The following are some of the more popular Delta Lake integrations, refer to [de
 * [Delta Standalone](https://docs.delta.io/latest/delta-standalone.html): This library allows Scala and Java-based projects (including Apache Flink, Apache Hive, Apache Beam, and PrestoDB) to read from and write to Delta Lake.
 * [Apache Hive](https://docs.delta.io/latest/hive-integration.html): This connector allows Apache Hive to read from Delta Lake.
 * [Delta Rust API](https://docs.rs/deltalake/latest/deltalake/): This library allows Rust (with Python and Ruby bindings) low level access to Delta tables and is intended to be used with data processing frameworks like datafusion, ballista, rust-dataframe, vega, etc.
+
+For more built-in components, please click [here](https://ciusji.gitbook.io/guinsoolab/) to learn more.
 
 <br/>
 
