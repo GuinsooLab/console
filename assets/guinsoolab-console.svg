@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="280px" viewBox="0 0 280 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>guinsoolab-console</title>
+    <g id="guinsoolab-console" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#000000" x="0" y="0" width="280" height="280"></rect>
+        <text id="C" font-family="SinhalaMN-Bold, Sinhala MN" font-size="160" font-weight="bold" fill="#FFFFFF">
+            <tspan x="140" y="235">C</tspan>
+        </text>
+    </g>
+</svg>
