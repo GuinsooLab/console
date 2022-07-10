@@ -21,12 +21,6 @@ export const menuItemContainerStyles: any = {
   },
   "&:hover, &:focus": {
     background: "#EAEAEA",
-    // "& div:nth-of-type(1)": {
-    //   background: "#00274D",
-    //   "& svg": {
-    //     fill: "#FFFFFF",
-    //   },
-    // },
   },
 };
 export const menuItemIconStyles: any = {
@@ -39,12 +33,12 @@ export const menuItemIconStyles: any = {
   "& svg": {
     width: 20,
     height: 20,
-    fill: "#00274D",
+    fill: "#636363",
   },
 };
 
 export const menuItemTextStyles: any = {
-  color: "#00274D",
+  color: "#5A6375",
   fontSize: "14px",
   marginLeft: "8px",
   "& span": {

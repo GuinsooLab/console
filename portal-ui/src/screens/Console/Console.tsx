@@ -59,6 +59,18 @@ import {
   setSnackBarMessage,
 } from "../../systemSlice";
 import { selFeatures, selSession } from "./consoleSlice";
+import GuinsooLabIcon from "../../guinsoolab.svg";
+import DiscoveryIcon from "../../images/discovery.svg";
+import QueryIcon from "../../images/query.svg";
+import StorageIcon from "../../images/storage.svg";
+import ProcessIcon from "../../images/process.svg";
+import FlowIcon from "../../images/flow.svg";
+import ObservabilityIcon from "../../images/observe.svg";
+import ProjectIcon from "../../images/Project.svg";
+import MarketIcon from "../../images/Apps.svg";
+import SettingIcon from "../../images/Settting.svg";
+import LineIcon from "../../images/Line.svg";
+import HelpIcon from "../../images/Help.svg";
 
 const Trace = React.lazy(() => import("./Trace/Trace"));
 const Heal = React.lazy(() => import("./Heal/Heal"));
@@ -152,6 +164,39 @@ const styles = (theme: Theme) =>
       "& .MuiPaper-root.MuiSnackbarContent-root": {
         borderRadius: "0px 0px 5px 5px",
         boxShadow: "none",
+      },
+    },
+    appNav: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      height: "100vh",
+      width: 60,
+      textAlign: "center",
+      backgroundColor: "#072C4F",
+      "& ul": {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: 0,
+      },
+      "& li": {
+        height: 60,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#ffffff",
+        borderRadius: 4,
+        "& img": {
+          padding: 8,
+          height: 36,
+          width: 36,
+          "&:hover": {
+            backgroundColor: "#081c42",
+          }
+        },
       },
     },
     content: {
@@ -505,6 +550,28 @@ const Console = ({ classes }: IConsoleProps) => {
     <Fragment>
       {session && session.status === "ok" ? (
         <div className={classes.root}>
+          <div className={classes.appNav}>
+            <img src={GuinsooLabIcon} width={60} height={47} alt="logo" />
+            <ul style={{listStyle: "none"}}>
+              <li><img src={ProjectIcon} alt="data-project"/></li>
+              <li><img src={DiscoveryIcon} alt="data-discovery"/></li>
+              <li><img src={QueryIcon} alt="data-query"/></li>
+              <li><img src={StorageIcon} alt="data-storage"/></li>
+              <li><img src={ProcessIcon} alt="data-process"/></li>
+              <li><img src={FlowIcon} alt="data-flow"/></li>
+              <li><img src={ObservabilityIcon} alt="data-observability"/></li>
+              <li style={{height: 20}}><img src={LineIcon} style={{width: 40, padding: 0, height: 1}} alt="line"/></li>
+              <li><img src={MarketIcon} alt="data-market"/></li>
+              <li><img src={SettingIcon} alt="data-setting"/></li>
+              <li style={{position: "absolute", left: 0, bottom: 0, width: 60}}>
+                <img
+                  src={HelpIcon}
+                  onClick={() => window.open("https://ciusji.gitbook.io/guinsoolab/appendix/support", "_blank")}
+                  alt="data-help"
+                />
+              </li>
+            </ul>
+          </div>
           <CssBaseline />
           {!hideMenu && <Menu />}
 

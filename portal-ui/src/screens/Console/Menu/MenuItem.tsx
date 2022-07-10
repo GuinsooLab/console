@@ -231,7 +231,7 @@ const MenuItem = ({
                           justifyContent: "center",
 
                           "& svg": {
-                            fill: "#00274D",
+                            fill: "#636363",
                             width: "20px",
                             height: "20px",
                           },

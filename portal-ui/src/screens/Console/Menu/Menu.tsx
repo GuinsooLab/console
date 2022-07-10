@@ -30,7 +30,6 @@ import { clearSession } from "../../../common/utils";
 import { baseUrl } from "../../../history";
 import api from "../../../common/api";
 
-// import MenuToggle from "./MenuToggle";
 import ConsoleMenuList from "./ConsoleMenuList";
 import { validRoutes } from "../valid-routes";
 import { selOpMode, userLogged } from "../../../systemSlice";
@@ -70,8 +69,9 @@ const styles = (theme: Theme) =>
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.enteringScreen,
       }),
+      marginTop: "47px",
+      borderTop: "#eaedee 1px solid",
       borderRight: "1px solid #d9d9d999",
-      borderLeft: "1px solid #d9d9d999",
     },
     drawerClose: {
       transition: theme.transitions.create("width", {
@@ -83,6 +83,13 @@ const styles = (theme: Theme) =>
         width: 75,
       },
     },
+    drawerAppMenu: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      height: 200,
+      backgroundColor: "blue",
+    }
   });
 
 interface IMenuProps {
@@ -136,13 +143,6 @@ const Menu = ({ classes }: IMenuProps) => {
         }),
       }}
     >
-      {/*<MenuToggle*/}
-      {/*  onToggle={(nextState) => {*/}
-      {/*    dispatch(menuOpen(nextState));*/}
-      {/*  }}*/}
-      {/*  isOpen={sidebarOpen}*/}
-      {/*/>*/}
-
       <ConsoleMenuList
         menuItems={allowedMenuItems}
         isOpen={sidebarOpen}
