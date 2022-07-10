@@ -215,7 +215,7 @@ const BucketDetails = ({ classes }: IBucketDetailsProps) => {
                 aria-label="Browse Bucket"
                 component="span"
                 onClick={openBucketBrowser}
-                size="large"
+                size="medium"
               >
                 <FolderIcon />
               </IconButton>

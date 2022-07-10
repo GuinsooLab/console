@@ -131,7 +131,7 @@ const BrowserHandler = () => {
                   aria-label="Configure Bucket"
                   component="span"
                   onClick={openBucketConfiguration}
-                  size="large"
+                  size="medium"
                 >
                   <SettingsIcon />
                 </IconButton>

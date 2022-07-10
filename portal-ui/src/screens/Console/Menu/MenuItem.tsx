@@ -129,9 +129,9 @@ const MenuItem = ({
         id={id}
         className={`${activeClsName} ${stateClsName} main-menu-item `}
         disableRipple
+        style={{height: "36px", marginLeft: 0, marginRight: 0, paddingLeft: "8px"}}
         sx={{
           ...menuItemContainerStyles,
-          marginTop: "5px",
           ...menuItemMiniStyles,
 
           "& .expanded-icon": {
@@ -214,6 +214,7 @@ const MenuItem = ({
                       setSelectedMenuItem(page.id);
                     }
                   }}
+                  style={{height: "36px", padding: "0 0 0 8px"}}
                   disableRipple
                   sx={{
                     ...menuItemStyle,
@@ -225,15 +226,14 @@ const MenuItem = ({
                     <Tooltip title={`${item.name}`} placement="right">
                       <ListItemIcon
                         sx={{
-                          background: "#00274D",
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
 
                           "& svg": {
-                            fill: "#fff",
-                            minWidth: "12px",
-                            maxWidth: "12px",
+                            fill: "#636363",
+                            width: "20px",
+                            height: "20px",
                           },
                         }}
                         className="menu-icon"

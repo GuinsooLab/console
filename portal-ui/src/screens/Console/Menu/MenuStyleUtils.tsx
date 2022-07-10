@@ -16,42 +16,31 @@
 
 export const menuItemContainerStyles: any = {
   paddingLeft: 0,
-  paddingBottom: "18px",
   "&.active div:nth-of-type(1)": {
-    border: "2px solid #ffffff",
+    background: "#EAEAEA",
   },
   "&:hover, &:focus": {
-    background: "none",
-    "& div:nth-of-type(1)": {
-      background: "none",
-      "& svg": {
-        fill: "#ffffff",
-      },
-    },
+    background: "#EAEAEA",
   },
 };
 export const menuItemIconStyles: any = {
-  width: 37,
-  minWidth: 37,
-  height: 37,
-  background: "#00274D",
-  border: "2px solid #002148",
+  width: 20,
+  minWidth: 20,
+  height: 20,
   display: "flex",
   alignItems: "center",
-  borderRadius: "50%",
-  justifyContent: "center",
 
   "& svg": {
-    width: 16,
-    height: 16,
-    fill: "#8399AB",
+    width: 20,
+    height: 20,
+    fill: "#636363",
   },
 };
 
 export const menuItemTextStyles: any = {
-  color: "#BCC7D1",
+  color: "#5A6375",
   fontSize: "14px",
-  marginLeft: "11px",
+  marginLeft: "8px",
   "& span": {
     fontSize: "14px",
   },
@@ -77,41 +66,23 @@ export const menuItemMiniStyles: any = {
       },
     },
   },
-
-  "&.bottom-menu-item": {
-    marginBottom: "5px",
-  },
 };
 
 export const menuItemStyle: any = {
   paddingLeft: "8px",
-  paddingRight: "5px",
-  paddingBottom: "8px",
-  borderRadius: "2px",
-  marginTop: "2px",
+  paddingRight: "8px",
   "&.active": {
-    backgroundColor: "hsla(0,0%,100%,.1)",
+    color: "#FFFFFF",
     ".menu-icon": {
-      border: "1px solid hsla(0,0%,100%,.1)",
-      borderRadius: "50%",
-      background: "#072549",
+      fill: "#FFFFFF",
     },
   },
   "& .menu-icon": {
-    padding: "5px",
-    maxWidth: "28px",
-    minWidth: "28px",
-    height: "28px",
-    background: "none",
+    maxWidth: "20px",
+    minWidth: "20px",
+    height: "20px",
   },
   "&:hover, &:focus": {
-    background: "hsla(0,0%,100%,.25)",
-    "& .menu-icon": {
-      background: "#072549",
-      borderRadius: "50%",
-      "& svg": {
-        fill: "#c7c3c3",
-      },
-    },
+    background: "#EAEAEA",
   },
 };
