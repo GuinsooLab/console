@@ -1,5 +1,5 @@
 // This file is part of GuinsooLab Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// Copyright (c) 2022 GuinsooLab, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -140,7 +140,7 @@ const BasicDashboard = ({ usage }: IDashboardProps) => {
               title={"We can't retrieve advanced metrics at this time"}
               help={
                 <Fragment>
-                  MinIO Dashboard will display basic metrics as we couldn't
+                  AnnaStore Dashboard will display basic metrics as we couldn't
                   connect to Prometheus successfully.
                   <br /> <br />
                   Please try again in a few minutes. If the problem persists,
@@ -162,7 +162,7 @@ const BasicDashboard = ({ usage }: IDashboardProps) => {
                       fontSize: "14px",
                     }}
                   >
-                    MinIO Dashboard will display basic metrics as we couldn’t
+                    AnnaStore Dashboard will display basic metrics as we couldn’t
                     connect to Prometheus successfully. Please try again in a
                     few minutes. If the problem persists, you can review your
                     configuration and confirm that Prometheus server is up and
@@ -178,7 +178,7 @@ const BasicDashboard = ({ usage }: IDashboardProps) => {
                     }}
                   >
                     <a
-                      href="https://docs.min.io/minio/baremetal/monitoring/metrics-alerts/collect-minio-metrics-using-prometheus.html?ref=con#minio-metrics-collect-using-prometheus"
+                      href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore/monitoring/collect-metrics-using-prometheus"
                       target="_blank"
                       rel="noreferrer"
                     >

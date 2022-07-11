@@ -51,7 +51,7 @@ const DistributedOnly = ({ iconComponent, entity }: IDistributedOnly) => {
               <div>
                 Please deploy a server in{" "}
                 <a
-                  href="https://docs.min.io/minio/baremetal/installation/deploy-minio-distributed.html?ref=con"
+                  href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore/deployment-and-management/deploy-in-distributed-mode"
                   target="_blank"
                   rel="noreferrer"
                 >

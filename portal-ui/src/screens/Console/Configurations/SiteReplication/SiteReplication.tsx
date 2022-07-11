@@ -190,7 +190,7 @@ const SiteReplication = () => {
                 iconComponent={<ClustersIcon />}
                 help={
                   <Fragment>
-                    This feature allows multiple independent MinIO sites (or
+                    This feature allows multiple independent AnnaStore sites (or
                     clusters) that are using the same external IDentity Provider
                     (IDP) to be configured as replicas.
                     <br />
@@ -207,7 +207,7 @@ const SiteReplication = () => {
                     <br />
                     You can learn more at our{" "}
                     <a
-                      href="https://github.com/minio/minio/tree/master/docs/site-replication?ref=con"
+                      href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -240,7 +240,7 @@ const SiteReplication = () => {
                 <br />
                 <br />
                 All sites must have the same deployment credentials (i.e.
-                MINIO_ROOT_USER, MINIO_ROOT_PASSWORD).
+                ANNASTORE_ROOT_USER, ANNASTORE_ROOT_PASSWORD).
                 <br />
                 <br />
                 All sites must be using the same external IDP(s) if any.
@@ -252,7 +252,7 @@ const SiteReplication = () => {
                 <br />
                 You can learn more at our{" "}
                 <a
-                  href="https://github.com/minio/minio/tree/master/docs/site-replication?ref=con"
+                  href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore"
                   target="_blank"
                   rel="noreferrer"
                 >

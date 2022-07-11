@@ -24,21 +24,21 @@ export const menuItemContainerStyles: any = {
   },
 };
 export const menuItemIconStyles: any = {
-  width: 20,
-  minWidth: 20,
-  height: 20,
+  width: 16,
+  minWidth: 16,
+  height: 16,
   display: "flex",
   alignItems: "center",
 
   "& svg": {
-    width: 20,
-    height: 20,
-    fill: "#636363",
+    width: 16,
+    height: 16,
+    fill: "#061d41",
   },
 };
 
 export const menuItemTextStyles: any = {
-  color: "#5A6375",
+  color: "#061d41",
   fontSize: "14px",
   marginLeft: "8px",
   "& span": {
@@ -71,16 +71,17 @@ export const menuItemMiniStyles: any = {
 export const menuItemStyle: any = {
   paddingLeft: "8px",
   paddingRight: "8px",
+  color: "#061d41",
   "&.active": {
     color: "#FFFFFF",
     ".menu-icon": {
-      fill: "#FFFFFF",
+      fill: "#061d41",
     },
   },
   "& .menu-icon": {
-    maxWidth: "20px",
-    minWidth: "20px",
-    height: "20px",
+    maxWidth: "16px",
+    minWidth: "16px",
+    height: "16px",
   },
   "&:hover, &:focus": {
     background: "#EAEAEA",

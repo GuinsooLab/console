@@ -25,6 +25,10 @@ const styles = (theme: Theme) =>
       display: "flex",
       height: "100%",
       width: "100%",
+      "& svg": {
+        width: 16,
+        height: 16,
+      }
     },
     tabsHeaderContainer: {
       width: "300px",
@@ -81,7 +85,11 @@ const styles = (theme: Theme) =>
   });
 
 const tabStripStyle = {
-  minHeight: 60,
+  minHeight: 40,
+  "& svg": {
+    width: 16,
+    height: 16,
+  }
 };
 
 const VerticalTabs = ({

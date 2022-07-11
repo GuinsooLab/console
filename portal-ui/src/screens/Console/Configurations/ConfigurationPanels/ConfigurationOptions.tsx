@@ -81,7 +81,7 @@ const ConfigurationOptions = ({ classes }: IConfigurationOptions) => {
             id="settings-container"
             className={classes.settingsOptionsContainer}
           >
-            <ScreenTitle icon={<SettingsIcon />} title={"Configuration:"} />
+            <ScreenTitle icon={<SettingsIcon />} title={"Configuration"} />
             <VerticalTabs
               selectedTab={selConfigTab}
               isRouteTabs
@@ -122,13 +122,13 @@ const ConfigurationOptions = ({ classes }: IConfigurationOptions) => {
             iconComponent={<SettingsIcon />}
             help={
               <Fragment>
-                MinIO supports a variety of configurations ranging from
+                AnnaStore supports a variety of configurations ranging from
                 encryption, compression, region, notifications, etc.
                 <br />
                 <br />
                 You can learn more at our{" "}
                 <a
-                  href="https://docs.min.io/minio/baremetal/reference/minio-cli/minio-mc-admin/mc-admin.config.html?ref=con#id4"
+                  href="https://github.com/GuinsooLab/annastore"
                   target="_blank"
                   rel="noreferrer"
                 >

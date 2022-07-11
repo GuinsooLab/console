@@ -82,7 +82,7 @@ const AddUserHelpBox = () => {
         <div>Learn more about the Users feature</div>
       </Box>
       <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
-        A MinIO user consists of a unique access key (username) and
+        An AnnaStore user consists of a unique access key (username) and
         corresponding secret key (password). Clients must authenticate their
         identity by specifying both a valid access key (username) and the
         corresponding secret key (password) of an existing MinIO user.

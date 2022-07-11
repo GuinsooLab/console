@@ -364,7 +364,7 @@ export const fieldsConfigurations: any = {
       name: "claim_name",
       required: false,
       label: "Claim Name",
-      tooltip: "Claim from which MinIO will read the policy or role to use",
+      tooltip: "Claim from which AnnaStore will read the policy or role to use",
       type: "string",
       placeholder: "Enter Claim Name",
     },
