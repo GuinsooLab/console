@@ -382,7 +382,7 @@ const AddReplicationSites = () => {
                         <InputBoxWrapper
                           id={`add-rep-peer-site-ep-${index}`}
                           name={`add-rep-peer-site-ep-${index}`}
-                          placeholder={`https://dr.minio-storage:900${index}`}
+                          placeholder={`https://dr.annastore-storage:900${index}`}
                           label=""
                           error={isValidEndPoint(siteConfig[index].endpoint)}
                           value={`${sci.endpoint}`}

@@ -190,7 +190,7 @@ const styles = (theme: Theme) =>
         color: "#ffffff",
         borderRadius: 4,
         "& img": {
-          padding: 8,
+          padding: 10,
           height: 36,
           width: 36,
           "&:hover": {

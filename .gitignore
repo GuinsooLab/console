@@ -114,3 +114,6 @@ pycodestyle*.py
 
 # For IDE settings
 .vscode
+
+portal-ui/build/static/js/
+portal-ui/build/static/css/

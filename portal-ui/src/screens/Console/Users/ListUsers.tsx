@@ -309,11 +309,11 @@ const ListUsers = ({ classes }: IUsersProps) => {
                   iconComponent={<UsersIcon />}
                   help={
                     <Fragment>
-                      A MinIO user consists of a unique access key (username)
+                      An AnnaStore user consists of a unique access key (username)
                       and corresponding secret key (password). Clients must
                       authenticate their identity by specifying both a valid
                       access key (username) and the corresponding secret key
-                      (password) of an existing MinIO user.
+                      (password) of an existing AnnaStore user.
                       <br />
                       Groups provide a simplified method for managing shared
                       permissions among users with common access patterns and
@@ -323,7 +323,7 @@ const ListUsers = ({ classes }: IUsersProps) => {
                       Users inherit access permissions to data and resources
                       through the groups they belong to.
                       <br />
-                      MinIO uses Policy-Based Access Control (PBAC) to define
+                      AnnaStore uses Policy-Based Access Control (PBAC) to define
                       the authorized actions and resources to which an
                       authenticated user has access. Each policy describes one
                       or more actions and conditions that outline the
@@ -331,13 +331,13 @@ const ListUsers = ({ classes }: IUsersProps) => {
                       <br />
                       <br />
                       Each user can access only those resources and operations
-                      which are explicitly granted by the built-in role. MinIO
+                      which are explicitly granted by the built-in role. AnnaStore
                       denies access to any other resource or action by default.
                       <br />
                       <br />
                       You can learn more at our{" "}
                       <a
-                        href="https://docs.min.io/minio/k8s/tutorials/user-management.html?ref=con"
+                        href="https://ciusji.gitbook.io/guinsoolab/products/data-storage"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -362,11 +362,11 @@ const ListUsers = ({ classes }: IUsersProps) => {
                     iconComponent={<UsersIcon />}
                     help={
                       <Fragment>
-                        A MinIO user consists of a unique access key (username)
+                        An AnnaStore user consists of a unique access key (username)
                         and corresponding secret key (password). Clients must
                         authenticate their identity by specifying both a valid
                         access key (username) and the corresponding secret key
-                        (password) of an existing MinIO user.
+                        (password) of an existing AnnaStore user.
                         <br />
                         Groups provide a simplified method for managing shared
                         permissions among users with common access patterns and
@@ -376,7 +376,7 @@ const ListUsers = ({ classes }: IUsersProps) => {
                         Users inherit access permissions to data and resources
                         through the groups they belong to.
                         <br />
-                        MinIO uses Policy-Based Access Control (PBAC) to define
+                        AnnaStore uses Policy-Based Access Control (PBAC) to define
                         the authorized actions and resources to which an
                         authenticated user has access. Each policy describes one
                         or more actions and conditions that outline the
@@ -384,7 +384,7 @@ const ListUsers = ({ classes }: IUsersProps) => {
                         <br />
                         <br />
                         Each user can access only those resources and operations
-                        which are explicitly granted by the built-in role. MinIO
+                        which are explicitly granted by the built-in role. AnnaStore
                         denies access to any other resource or action by
                         default.
                         <SecureComponent

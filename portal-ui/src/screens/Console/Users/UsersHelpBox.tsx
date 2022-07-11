@@ -1,5 +1,5 @@
 // This file is part of GuinsooLab Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// Copyright (c) 2022 GuinsooLab, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -90,7 +90,7 @@ const UsersHelpBox = () => {
       >
         <FeatureItem icon={<UsersIcon />} description={`Create Users`} />
         <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
-          A MinIO user consists of a unique access key (username) and
+          An AnnaStore user consists of a unique access key (username) and
           corresponding secret key (password). Clients must authenticate their
           identity by specifying both a valid access key (username) and the
           corresponding secret key (password) of an existing MinIO user.
