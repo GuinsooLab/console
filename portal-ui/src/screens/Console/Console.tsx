@@ -183,7 +183,7 @@ const styles = (theme: Theme) =>
         padding: 0,
       },
       "& li": {
-        height: 60,
+        height: 50,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
