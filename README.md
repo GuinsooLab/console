@@ -212,7 +212,7 @@ Following tree structure is expected for supporting multiple domains:
 
 ```
 
-## Connect Console to a Minio using TLS and a self-signed certificate
+## Connect Console to An AnnaStore using TLS and a self-signed certificate
 
 Copy the MinIO `ca.crt` under `~/.console/certs/CAs`, then:
 
@@ -225,7 +225,12 @@ You can verify that the apis work by doing the request on `localhost:9090/api/v1
 
 ## Screenshots & Gifs
 
+### Console SQL pad
+
 ![console-sqlpad](assets/console-sqlpad.png)
+
+### Console AnnaStore
+
 ![console-annastore](assets/cnosole-annastore.png)
 
 And others coming.
