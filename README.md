@@ -27,7 +27,7 @@ A graphical user interface for [GuinsooLab](https://guinsoolab.github.io/glab/).
         - [3. Set the policy for the new `console` user](#3-set-the-policy-for-the-new-console-user)
     - [Start Console service:](#start-console-service)
     - [Start Console service with TLS:](#start-console-service-with-tls)
-    - [Connect Console to a Minio using TLS and a self-signed certificate](#connect-console-to-a-minio-using-tls-and-a-self-signed-certificate)
+    - [Connect Console to an AnnaStore using TLS and a self-signed certificate](#connect-console-to-an-AnnaStore-using-tls-and-a-self-signed-certificate)
 - [Contribute to console Project](#contribute-to-console-project)
 
 <!-- markdown-toc end -->
@@ -36,16 +36,16 @@ A graphical user interface for [GuinsooLab](https://guinsoolab.github.io/glab/).
 
 ### Binary Releases
 
-| OS      | ARCH    | Binary                                                                                               |
-|:-------:|:-------:|:----------------------------------------------------------------------------------------------------:|
-| Linux   | amd64   | [linux-amd64](https://github.com/minio/console/releases/latest/download/console-linux-amd64)         |
-| Linux   | arm64   | [linux-arm64](https://github.com/minio/console/releases/latest/download/console-linux-arm64)         |
-| Linux   | ppc64le | [linux-ppc64le](https://github.com/minio/console/releases/latest/download/console-linux-ppc64le)     |
-| Linux   | s390x   | [linux-s390x](https://github.com/minio/console/releases/latest/download/console-linux-s390x)         |
-| Apple   | amd64   | [darwin-amd64](https://github.com/minio/console/releases/latest/download/console-darwin-amd64)       |
-| Windows | amd64   | [windows-amd64](https://github.com/minio/console/releases/latest/download/console-windows-amd64.exe) |
+| OS      | ARCH    | Binary                                                         |
+|:-------:|:-------:|:-----------------------------------------------------:|
+| Linux   | amd64   | [linux-amd64](https://ciusji.gitbook.io/guinsoolab/)         |
+| Linux   | arm64   | [linux-arm64](https://ciusji.gitbook.io/guinsoolab/)         |
+| Linux   | ppc64le | [linux-ppc64le](https://ciusji.gitbook.io/guinsoolab/)     |
+| Linux   | s390x   | [linux-s390x](https://ciusji.gitbook.io/guinsoolab/)         |
+| Apple   | amd64   | [darwin-amd64](https://ciusji.gitbook.io/guinsoolab/)       |
+| Windows | amd64   | [windows-amd64](https://ciusji.gitbook.io/guinsoolab/) |
 
-You can also verify the binary with [minisign](https://jedisct1.github.io/minisign/) by downloading the corresponding [`.minisig`](https://github.com/minio/console/releases/latest) signature file. Then run:
+You can also verify the binary with [minisign](https://jedisct1.github.io/minisign/) by downloading the corresponding `.minisig` signature file. Then run:
 ```
 minisign -Vm console-<OS>-<ARCH> -P RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav
 ```
@@ -54,7 +54,7 @@ minisign -Vm console-<OS>-<ARCH> -P RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRyw
 
 Pull the latest release via:
 ```
-docker pull minio/console
+docker pull guinsoolab/console
 ```
 
 ### Build from source
@@ -67,15 +67,15 @@ go install github.com/minio/console/cmd/console@latest
 
 ## Setup
 
-All `console` needs is a MinIO user with admin privileges and URL pointing to your MinIO deployment.
+All `console` needs is a GuinsooLab user with admin privileges and URL pointing to your GuinsooLab deployment.
 
-> Note: We don't recommend using MinIO's Operator Credentials
+> Note: We don't recommend using GuinsooLab's Operator Credentials
 
 ### 1. Create a user `console` using `mc`
 
 ```bash
-mc admin user add myminio/
-Enter Access Key: console
+mc admin user add mystore/
+Enter Access Key: admin
 Enter Secret Key: xxxxxxxx
 ```
 
@@ -108,7 +108,7 @@ EOF
 ```
 
 ```sh
-mc admin policy add myminio/ consoleAdmin admin.json
+mc admin policy add mystore/ consoleAdmin admin.json
 ```
 
 ### 3. Set the policy for the new `console` user
@@ -217,13 +217,20 @@ Following tree structure is expected for supporting multiple domains:
 Copy the MinIO `ca.crt` under `~/.console/certs/CAs`, then:
 
 ```sh
-export CONSOLE_MINIO_SERVER=https://localhost:9000
+export CONSOLE_GUINSOOLAB_SERVER=https://localhost:9000
 ./console server
 ```
 
 You can verify that the apis work by doing the request on `localhost:9090/api/v1/...`
 
+## Screenshots & Gifs
+
+![](assets/console-sqlpad.png)
+![](assets/cnosole-annastore.png)
+
+And others coming.
+
 ## Contribute to console Project
-Please follow console [Contributor's Guide](https://github.com/minio/console/blob/master/CONTRIBUTING.md)
+Please follow console [Contributor's Guide](https://ciusji.gitbook.io/guinsoolab/appendix/contribution)
 
 
