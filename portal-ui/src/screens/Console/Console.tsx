@@ -59,7 +59,7 @@ import {
   setSnackBarMessage,
 } from "../../systemSlice";
 import { selFeatures, selSession } from "./consoleSlice";
-import GuinsooLabIcon from "../../guinsoolab.svg";
+import GuinsooLabIcon from "../../images/guinsoolab.svg";
 import DiscoveryIcon from "../../images/discovery.svg";
 import QueryIcon from "../../images/query.svg";
 import StorageIcon from "../../images/storage.svg";
@@ -209,8 +209,8 @@ const styles = (theme: Theme) =>
     warningBar: {
       background: theme.palette.primary.main,
       color: "white",
-      heigh: "60px",
-      widht: "100%",
+      height: "60px",
+      width: "100%",
       lineHeight: "60px",
       textAlign: "center",
     },
@@ -554,7 +554,11 @@ const Console = ({ classes }: IConsoleProps) => {
           <div className={classes.appNav}>
             <img src={GuinsooLabIcon} width={60} height={47} alt="logo" />
             <ul style={{listStyle: "none"}}>
-              <li><img src={SqlPadIcon} alt="data-pad"/></li>
+              <li
+                onClick={() => window.open("http://localhost:3000/sqlpad/queries/new")}
+              >
+                <img src={SqlPadIcon} alt="data-pad"/>
+              </li>
               <li><img src={DiscoveryIcon} alt="data-discovery"/></li>
               <li><img src={QueryIcon} alt="data-query"/></li>
               <li><img src={StorageIcon} alt="data-storage"/></li>
