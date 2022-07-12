@@ -5,17 +5,17 @@
     These REFERENCE are various colors that were sprinkled throughout
     They are kept around for reference until colors settle
   */
-  --REFERENCE-link-color: #00b7ff;
-  --REFERENCE-button-border-color: #40a9ff;
-  --REFERENCE-button-active-color: #096dd9;
-  --REFERENCE-primary-color: #1890ff;
+  --REFERENCE-link-color: #062c4f;
+  --REFERENCE-button-border-color: #062c4f;
+  --REFERENCE-button-active-color: #062c4f;
+  --REFERENCE-primary-color: #062c4f;
 
   --toolbar-bg-color: #f4f4f4;
   --table-alt-row-bg-color: #fafafa;
 
-  --primary-color: hsl(209, 100%, 55%);
-  --primary-dark-color: hsl(209, 100%, 42%);
-  --primary-light-color: hsl(209, 100%, 63%);
+  --primary-color: #061d41;
+  --primary-dark-color: #081c41;
+  --primary-light-color: #062c4f;
   --primary-darkest-color: hsl(209, 50%, 25%);
   --primary-focus: hsl(215, 100%, 25%);
 
@@ -28,7 +28,7 @@
   --secondary-color-75: rgba(250, 50, 173, 0.75);
   --secondary-color-30: rgba(250, 50, 173, 0.3);
 
-  --border: 1px solid rgba(0, 0, 0, 0.15);
+  --border: 1px solid #d9d9d999;
 
   --box-shadow-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);

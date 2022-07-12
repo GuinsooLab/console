@@ -1,5 +1,5 @@
-import { History } from 'history';
-import { useHistory } from 'react-router-dom';
+import {History} from 'history';
+import {useHistory} from 'react-router-dom';
 
 let _history: History | undefined = undefined;
 
@@ -11,7 +11,6 @@ export function getHistory() {
  * Component to capture history from a hook and store in variable.
  */
 export function RegisterHistory() {
-  const history = useHistory();
-  _history = history;
+  _history = useHistory();
   return null;
 }

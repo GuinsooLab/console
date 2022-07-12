@@ -9,7 +9,7 @@ function ServiceTokenListDrawer({ visible, onClose }: any) {
       visible={visible}
       width={600}
       onClose={onClose}
-      placement="left"
+      placement="right"
     >
       <ServiceTokenList />
     </Drawer>

@@ -53,8 +53,8 @@
   "scripts": {
     "build": "tsc && vite build",
     "start": "vite",
-    "fixlint": "eslint --fix \\\"**/*.{js,jsx,ts,tsx}\\\" && prettier --write ",
-    "lint": "eslint \\\"**/*.{js,jsx,ts,tsx}\\\" && prettier --check ",
+    "fixlint": "eslint --fix \"**/*.{js,jsx,ts,tsx}\" && prettier --write ",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier --check ",
     "dev": "vite",
     "serve": "vite preview"
   },

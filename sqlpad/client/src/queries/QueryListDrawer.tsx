@@ -189,7 +189,7 @@ function QueryListDrawer({ onClose, visible }: Props) {
       visible={visible}
       width="600px"
       onClose={handleClose}
-      placement="left"
+      placement="right"
     >
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         <div className={styles.filterContainer}>

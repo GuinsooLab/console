@@ -20,7 +20,7 @@
 }
 
 .textarea:focus {
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   /* padding adjustment prevents added border from shifting text */
   padding-left: 10px;
   padding-right: 10px;
@@ -28,7 +28,7 @@
 }
 
 .textarea:hover {
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   /* padding adjustment prevents added border from shifting text */
   padding-left: 10px;
   padding-right: 10px;
@@ -44,7 +44,7 @@
 }
 
 .danger:focus {
-  border: 2px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   outline: 0;
 }
 
