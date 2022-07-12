@@ -66,10 +66,11 @@ import StorageIcon from "../../images/storage.svg";
 import ProcessIcon from "../../images/process.svg";
 import FlowIcon from "../../images/flow.svg";
 import ObservabilityIcon from "../../images/observe.svg";
-import ProjectIcon from "../../images/Project.svg";
+import SqlPadIcon from "../../images/sqlpad.svg";
 import MarketIcon from "../../images/Apps.svg";
 import SettingIcon from "../../images/Settting.svg";
 import LineIcon from "../../images/Line.svg";
+import TerminalIcon from "../../images/terminal.svg";
 import HelpIcon from "../../images/Help.svg";
 
 const Trace = React.lazy(() => import("./Trace/Trace"));
@@ -182,7 +183,7 @@ const styles = (theme: Theme) =>
         padding: 0,
       },
       "& li": {
-        height: 60,
+        height: 50,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -553,7 +554,7 @@ const Console = ({ classes }: IConsoleProps) => {
           <div className={classes.appNav}>
             <img src={GuinsooLabIcon} width={60} height={47} alt="logo" />
             <ul style={{listStyle: "none"}}>
-              <li><img src={ProjectIcon} alt="data-project"/></li>
+              <li><img src={SqlPadIcon} alt="data-pad"/></li>
               <li><img src={DiscoveryIcon} alt="data-discovery"/></li>
               <li><img src={QueryIcon} alt="data-query"/></li>
               <li><img src={StorageIcon} alt="data-storage"/></li>
@@ -562,6 +563,7 @@ const Console = ({ classes }: IConsoleProps) => {
               <li><img src={ObservabilityIcon} alt="data-observability"/></li>
               <li style={{height: 20}}><img src={LineIcon} style={{width: 40, padding: 0, height: 1}} alt="line"/></li>
               <li><img src={MarketIcon} alt="data-market"/></li>
+              <li><img src={TerminalIcon} alt="data-terminal"/></li>
               <li><img src={SettingIcon} alt="data-setting"/></li>
               <li style={{position: "absolute", left: 0, bottom: 0, width: 60}}>
                 <img
