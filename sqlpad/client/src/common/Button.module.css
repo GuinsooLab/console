@@ -17,9 +17,8 @@
   padding: 0 10px;
   font-size: 14px;
   border-radius: 2px;
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--primary-color);
   background-color: #fff;
-  border-color: rgb(217, 217, 217);
   border-top-color: rgb(217, 217, 217, 0.5);
   border-left-color: rgb(217, 217, 217, 0.5);
 }
@@ -28,10 +27,8 @@
 .btn:focus {
   color: var(--primary-color);
   background-color: #fff;
-  box-shadow: 0 1px 0 var(--primary-color-30);
-  border: 2px solid var(--primary-color);
   /* padding adjustment prevents added border from shifting text */
-  padding: 0 9px;
+  /*padding: 0 9px;*/
 }
 
 .btn:active {
@@ -104,37 +101,19 @@
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.065);
   border: 1px solid transparent;
   padding: 0 10px;
-  border-color: #d9d9d9;
 }
 
 .ghost {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--primary-color);
   box-shadow: 0 1px 0 transparent;
   border-color: transparent;
   background-color: transparent;
-}
-
-.ghost:hover,
-.ghost:focus {
-  color: rgba(255, 255, 255, 0.85);
-  background-color: transparent;
-}
-
-.ghost:active {
-  color: rgba(255, 255, 255, 1);
-  background-color: transparent;
-}
-
-.ghost:disabled,
-.ghost[disabled] {
-  border: none;
-  color: rgba(255, 255, 255, 0.55);
 }
 
 .primaryGhost {
   color: var(--primary-color);
   box-shadow: 0 1px 0 transparent;
-  border-color: transparent;
+  border: 1px solid var(--primary-color);
   background-color: transparent;
 }
 

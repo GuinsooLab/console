@@ -36,7 +36,7 @@ function ToolbarQueryName() {
       <Button
         className="truncate"
         variant="primary-ghost"
-        style={{ fontSize: 18 }}
+        style={{ fontSize: 14 }}
         onClick={toggleShowQueryModal}
       >
         <div className="truncate" style={{ maxWidth: 500 }}>

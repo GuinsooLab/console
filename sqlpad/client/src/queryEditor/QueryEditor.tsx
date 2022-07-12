@@ -17,6 +17,21 @@ import QueryEditorSqlEditor from './QueryEditorSqlEditor';
 import QuerySaveModal from './QuerySaveModal';
 import Toolbar from './Toolbar';
 import UnsavedQuerySelector from './UnsavedQuerySelector';
+import styles from './ConnectionDropdown.module.css';
+
+import GuinsooLabIcon from "../images/guinsoolab.svg";
+import DiscoveryIcon from "../images/discovery.svg";
+import QueryIcon from "../images/query.svg";
+import StorageIcon from "../images/storage.svg";
+import ProcessIcon from "../images/process.svg";
+import FlowIcon from "../images/flow.svg";
+import ObservabilityIcon from "../images/observe.svg";
+import SqlPadIcon from "../images/sqlpad.svg";
+import MarketIcon from "../images/Apps.svg";
+import SettingIcon from "../images/Settting.svg";
+import LineIcon from "../images/Line.svg";
+import TerminalIcon from "../images/terminal.svg";
+import HelpIcon from "../images/Help.svg";
 
 interface Params {
   queryId?: string;
@@ -55,6 +70,8 @@ function QueryEditor() {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
+        paddingLeft: 60,
+        paddingTop: 47,
       }}
     >
       <AppHeader />
@@ -83,6 +100,54 @@ function QueryEditor() {
       <QuerySaveModal />
       <NotFoundModal visible={showNotFound} queryId={queryId} />
       <EditorNavProtection />
+      <div className={styles.appNav}>
+        <img src={GuinsooLabIcon} width={60} height={47} alt="logo" />
+        <ul className={styles.appNavUl}>
+          <li className={styles.appNavLi}
+            onClick={() => window.open("http://localhost:3000/sqlpad/queries/new")}
+          >
+            <img className={styles.appNavImg} src={SqlPadIcon} alt="data-pad"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={DiscoveryIcon} alt="data-discovery"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={QueryIcon} alt="data-query"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={StorageIcon} alt="data-storage"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={ProcessIcon} alt="data-process"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={FlowIcon} alt="data-flow"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={ObservabilityIcon} alt="data-observability"/>
+          </li>
+          <li style={{height: 20, listStyle: "none"}}>
+            <img className={styles.appNavImg} src={LineIcon} style={{width: 40, padding: 0, height: 1}} alt="line"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={MarketIcon} alt="data-market"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={TerminalIcon} alt="data-terminal"/>
+          </li>
+          <li className={styles.appNavLi}>
+            <img className={styles.appNavImg} src={SettingIcon} alt="data-setting"/>
+          </li>
+          <li style={{position: "absolute", left: 0, bottom: 0, width: 60, height: 50, padding: 7}}>
+            <img
+              src={HelpIcon}
+              className={styles.appHelpImg}
+              onClick={() => window.open("https://ciusji.gitbook.io/guinsoolab/appendix/support", "_blank")}
+              alt="data-help"
+            />
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

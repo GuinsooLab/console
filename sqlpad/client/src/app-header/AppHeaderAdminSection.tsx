@@ -54,7 +54,7 @@ function AppHeaderAdminSection() {
         visible={showUsers}
         width={600}
         onClose={() => setShowUsers(false)}
-        placement="left"
+        placement="right"
       >
         <UserList />
       </Drawer>

@@ -22,7 +22,7 @@
 
 .tagCloseButton:hover,
 .tagCloseButton:focus {
-  outline: 2px solid var(--primary-color);
+  outline: 1px solid var(--primary-color);
 }
 
 .CloseIcon {

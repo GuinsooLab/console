@@ -225,8 +225,8 @@ You can verify that the apis work by doing the request on `localhost:9090/api/v1
 
 ## Screenshots & Gifs
 
-![](assets/console-sqlpad.png)
-![](assets/cnosole-annastore.png)
+![console-sqlpad](assets/console-sqlpad.png)
+![console-annastore](assets/cnosole-annastore.png)
 
 And others coming.
 

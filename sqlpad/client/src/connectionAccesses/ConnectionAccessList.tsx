@@ -126,7 +126,7 @@ function ConnectionAccessList() {
         visible={showAccessCreate}
         onClose={handleCreateDrawerClose}
         onConnectionAccessSaved={handleConnectionAccessSaved}
-        placement="left"
+        placement="right"
       />
     </>
   );

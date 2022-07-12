@@ -2,7 +2,7 @@ import React from 'react';
 import AppHeaderAdminSection from './AppHeaderAdminSection';
 import AppMenu from './AppMenu';
 import HistoryButton from './HistoryButton';
-import Logo from './Logo';
+// import Logo from './Logo';
 import QueryListButton from './QueryListButton';
 import ToolbarNewQueryButton from './ToolbarNewQueryButton';
 import AppHeaderSpacer from './AppHeaderSpacer';
@@ -13,16 +13,15 @@ function Appheader() {
     <div
       style={{
         width: '100%',
-        color: '#fff',
-        backgroundColor: 'rgba(0, 0, 0, 0.84)',
+        backgroundColor: '#ffffff',
         padding: 6,
-        borderBottom: '1px solid rgb(204, 204, 204)',
+        borderBottom: '1px solid #d9d9d999',
+        borderTop: '1px solid #d9d9d999',
       }}
     >
       <div style={{ display: 'flex' }}>
-        <Logo />
-        <QueryListButton />
         <ToolbarNewQueryButton />
+        <QueryListButton />
         <HistoryButton />
         <AppHeaderAdminSection />
         <AppHeaderSpacer grow />
