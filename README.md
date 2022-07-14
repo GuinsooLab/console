@@ -16,7 +16,7 @@ A graphical user interface for [GuinsooLab](https://guinsoolab.github.io/glab/).
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [GuinsooLab Console](#minio-console)
+- [GuinsooLab Console](#guinsoolab-console)
     - [Install](#install)
         - [Binary Releases](#binary-releases)
         - [Docker](#docker)
@@ -62,7 +62,10 @@ docker pull guinsoolab/console
 > Minimum version required is go1.17
 
 ```
-go install github.com/minio/console/cmd/console@latest
+git clone git@github.com:GuinsooLab/console.git
+sh cross-compile.sh
+./console
+yarn start
 ```
 
 ## Setup
@@ -159,7 +162,7 @@ mc admin policy set myGuinsooLab ConsoleAdmin user=console
 }
 ```
 
-## Start Console service:
+## Start Console service
 
 Before running console service, following environment settings must be supplied
 ```sh
@@ -169,8 +172,8 @@ export CONSOLE_PBKDF_PASSPHRASE=SECRET
 # Required to encrypt JWT payload
 export CONSOLE_PBKDF_SALT=SECRET
 
-# MinIO Endpoint
-export CONSOLE_MINIO_SERVER=http://localhost:9000
+# AnnaStore Endpoint
+export CONSOLE_ANNASTORE_SERVER=http://localhost:9000
 ```
 
 Now start the console service.
@@ -181,7 +184,7 @@ Now start the console service.
 
 By default `console` runs on port `9090` this can be changed with `--port` of your choice.
 
-## Start Console service with TLS:
+## Start Console service with TLS
 
 Copy your `public.crt` and `private.key` to `~/.console/certs`, then:
 
@@ -214,7 +217,7 @@ Following tree structure is expected for supporting multiple domains:
 
 ## Connect Console to An AnnaStore using TLS and a self-signed certificate
 
-Copy the MinIO `ca.crt` under `~/.console/certs/CAs`, then:
+Copy the AnnaStore `ca.crt` under `~/.console/certs/CAs`, then:
 
 ```sh
 export CONSOLE_GUINSOOLAB_SERVER=https://localhost:9000
