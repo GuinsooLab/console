@@ -1,3 +1,7 @@
+<div align="right">
+    <img src="assets/guinsoolab-badge.png" width="60" alt="badge">
+    <br />
+</div>
 <div align="center">
    <img src="assets/guinsoolab-console.svg" width="80" alt="console"/>
    <br/>
