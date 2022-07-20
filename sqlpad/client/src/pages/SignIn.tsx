@@ -10,6 +10,8 @@ import Spacer from '../common/Spacer';
 import { api } from '../utilities/api';
 import useAppContext from '../utilities/use-app-context';
 
+import Logo from "../images/guinsoolab.svg";
+
 function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,7 +19,7 @@ function SignIn() {
   const { config } = useAppContext();
 
   useEffect(() => {
-    document.title = 'SQLPad - Sign In';
+    document.title = 'SQLPad - Sign In | GuisoooLab';
   }, []);
 
   const signIn = async (e: React.FormEvent) => {
@@ -145,7 +147,12 @@ function SignIn() {
 
   return (
     <div style={{ width: '300px', textAlign: 'center', margin: '100px auto' }}>
-      <h1>SQLPad</h1>
+      <img
+        src={Logo}
+        width={40} alt={"logo"}
+        style={{margin: '20px'}}
+        onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")}
+      />
       {(config.localAuthConfigured || config.ldapConfigured) && localLdapForm}
       {config.googleAuthConfigured && googleForm}
       {config.samlConfigured && samlForm}
