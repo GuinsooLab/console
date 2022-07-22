@@ -17,25 +17,6 @@ A graphical user interface for [GuinsooLab](https://guinsoolab.github.io/glab/).
 
 ![architecutre](assets/gdp-new.svg)
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [GuinsooLab Console](#guinsoolab-console)
-    - [Install](#install)
-        - [Binary Releases](#binary-releases)
-        - [Docker](#docker)
-        - [Build from source](#build-from-source)
-    - [Setup](#setup)
-        - [1. Create a user `console` using `mc`](#1-create-a-user-console-using-mc)
-        - [2. Create a policy for `console` with admin access to all resources (for testing)](#2-create-a-policy-for-console-with-admin-access-to-all-resources-for-testing)
-        - [3. Set the policy for the new `console` user](#3-set-the-policy-for-the-new-console-user)
-    - [Start Console service:](#start-console-service)
-    - [Start Console service with TLS:](#start-console-service-with-tls)
-    - [Connect Console to an AnnaStore using TLS and a self-signed certificate](#connect-console-to-an-AnnaStore-using-tls-and-a-self-signed-certificate)
-- [Contribute to console Project](#contribute-to-console-project)
-
-<!-- markdown-toc end -->
-
 ## Install
 
 ### Binary Releases
@@ -68,7 +49,8 @@ docker pull guinsoolab/console
 ```
 git clone git@github.com:GuinsooLab/console.git
 sh cross-compile.sh
-./console
+./console server
+cd portal-ui
 yarn start
 ```
 
