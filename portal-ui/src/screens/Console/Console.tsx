@@ -555,7 +555,7 @@ const Console = ({ classes }: IConsoleProps) => {
             <img src={GuinsooLabIcon} width={60} height={47} alt="logo" />
             <ul style={{listStyle: "none"}}>
               <li
-                onClick={() => window.open("http://localhost:3000/sqlpad/queries/new")}
+                onClick={() => window.open("/sqlpad")}
               >
                 <img src={SqlPadIcon} alt="data-pad"/>
               </li>
