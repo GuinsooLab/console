@@ -1,6 +1,7 @@
 const passport = require('passport');
 const router = require('express').Router();
 const getHeaderUser = require('../lib/get-header-user');
+const appLog = require('../lib/app-log');
 require('../typedefs');
 
 /**
@@ -25,6 +26,7 @@ function handleSignin(req, res, next) {
    */
   function handleAuth(err, user, info) {
     const detail = info && info.message;
+    appLog.info("handle auth detail: %s", detail);
     if (err) {
       return next(err);
     }
@@ -38,6 +40,8 @@ function handleSignin(req, res, next) {
       return res.utils.data();
     });
   }
+  appLog.info("body: %s", JSON.stringify(body));
+  // appLog.info("config: %s", JSON.stringify(config));
 
   if (
     body.email &&
@@ -55,6 +59,7 @@ function handleSignin(req, res, next) {
   // If header user is able to be derived from request,
   // authenticate via auth-proxy strategy, saving session
   const headerUser = getHeaderUser(req);
+  appLog.info("header user: %s", headerUser);
   if (headerUser) {
     return passport.authenticate('auth-proxy', handleAuth)(req, res, next);
   }

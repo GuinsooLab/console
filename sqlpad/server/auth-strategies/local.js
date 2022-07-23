@@ -36,6 +36,7 @@ function enableLocal(config) {
               email: user.email,
             });
           }
+          appLog.warn("wrong email or password")
           return done(null, false, { message: 'wrong email or password' });
         } catch (error) {
           done(error);
