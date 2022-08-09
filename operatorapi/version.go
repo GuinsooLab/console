@@ -21,15 +21,15 @@ import (
 	"net/http"
 	"time"
 
-	errors "github.com/minio/console/restapi"
+	errors "github.com/GuinsooLab/console/restapi"
 
-	xhttp "github.com/minio/console/pkg/http"
+	xhttp "github.com/GuinsooLab/console/pkg/http"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/operatorapi/operations"
+	"github.com/GuinsooLab/console/operatorapi/operations/user_api"
+	"github.com/GuinsooLab/console/pkg/utils"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
-	"github.com/minio/console/operatorapi/operations/user_api"
-	"github.com/minio/console/pkg/utils"
 )
 
 func registerVersionHandlers(api *operations.OperatorAPI) {

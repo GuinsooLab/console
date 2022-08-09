@@ -28,16 +28,16 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/minio/console/pkg/logger"
+	"github.com/GuinsooLab/console/pkg/logger"
 
-	"github.com/minio/console/restapi"
+	"github.com/GuinsooLab/console/restapi"
 
+	"github.com/GuinsooLab/console/operatorapi"
+	"github.com/GuinsooLab/console/operatorapi/operations"
+	"github.com/GuinsooLab/console/pkg/certs"
 	"github.com/go-openapi/loads"
 	"github.com/jessevdk/go-flags"
 	"github.com/minio/cli"
-	"github.com/minio/console/operatorapi"
-	"github.com/minio/console/operatorapi/operations"
-	"github.com/minio/console/pkg/certs"
 )
 
 // starts the server

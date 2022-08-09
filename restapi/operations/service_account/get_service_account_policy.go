@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // GetServiceAccountPolicyHandlerFunc turns a function with the right signature into a get service account policy handler

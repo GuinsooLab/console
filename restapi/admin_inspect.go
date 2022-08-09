@@ -26,11 +26,11 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/restapi/operations"
+	inspectApi "github.com/GuinsooLab/console/restapi/operations/inspect"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	inspectApi "github.com/minio/console/restapi/operations/inspect"
 	"github.com/minio/madmin-go"
 	"github.com/secure-io/sio-go"
 )

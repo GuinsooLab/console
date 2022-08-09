@@ -24,17 +24,17 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/minio/console/pkg/utils"
-	bucketApi "github.com/minio/console/restapi/operations/bucket"
-	policyApi "github.com/minio/console/restapi/operations/policy"
+	"github.com/GuinsooLab/console/pkg/utils"
+	bucketApi "github.com/GuinsooLab/console/restapi/operations/bucket"
+	policyApi "github.com/GuinsooLab/console/restapi/operations/policy"
 	s3 "github.com/minio/minio-go/v7"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/restapi/operations"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
 	iampolicy "github.com/minio/pkg/iam/policy"
 
-	policies "github.com/minio/console/restapi/policy"
+	policies "github.com/GuinsooLab/console/restapi/policy"
 )
 
 func registersPoliciesHandler(api *operations.ConsoleAPI) {

@@ -23,14 +23,14 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/GuinsooLab/console/pkg/utils"
 
-	userApi "github.com/minio/console/restapi/operations/user"
+	userApi "github.com/GuinsooLab/console/restapi/operations/user"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/restapi/operations"
+	saApi "github.com/GuinsooLab/console/restapi/operations/service_account"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	saApi "github.com/minio/console/restapi/operations/service_account"
 	"github.com/minio/madmin-go"
 	iampolicy "github.com/minio/pkg/iam/policy"
 )

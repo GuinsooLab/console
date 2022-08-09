@@ -28,13 +28,13 @@ import (
 	"strconv"
 	"time"
 
-	xerrors "github.com/minio/console/restapi"
+	xerrors "github.com/GuinsooLab/console/restapi"
 
-	"github.com/minio/console/operatorapi/operations/operator_api"
+	"github.com/GuinsooLab/console/operatorapi/operations/operator_api"
 
-	"github.com/minio/console/cluster"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/kes"
+	"github.com/GuinsooLab/console/cluster"
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/pkg/kes"
 	miniov2 "github.com/minio/operator/pkg/apis/minio.min.io/v2"
 	"gopkg.in/yaml.v2"
 	corev1 "k8s.io/api/core/v1"

@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // GetBucketReplicationOKCode is the HTTP code returned for type GetBucketReplicationOK

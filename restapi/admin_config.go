@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/restapi/operations"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
 	madmin "github.com/minio/madmin-go"
 
-	cfgApi "github.com/minio/console/restapi/operations/configuration"
+	cfgApi "github.com/GuinsooLab/console/restapi/operations/configuration"
 )
 
 func registerConfigHandlers(api *operations.ConsoleAPI) {

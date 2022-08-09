@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/GuinsooLab/console/models"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
 	"github.com/stretchr/testify/assert"
 )
 

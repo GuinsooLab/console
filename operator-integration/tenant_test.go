@@ -32,10 +32,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/operatorapi"
+	"github.com/GuinsooLab/console/operatorapi/operations"
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi"
-	"github.com/minio/console/operatorapi/operations"
 	"github.com/stretchr/testify/assert"
 )
 

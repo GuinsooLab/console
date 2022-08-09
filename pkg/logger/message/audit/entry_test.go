@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/GuinsooLab/console/pkg/utils"
 )
 
 func TestNewEntry(t *testing.T) {

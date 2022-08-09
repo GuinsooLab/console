@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"regexp"
 
-	"github.com/minio/console/pkg/http"
+	"github.com/GuinsooLab/console/pkg/http"
 )
 
 var ErrCantDetermineMinIOImage = errors.New("can't determine MinIO Image")

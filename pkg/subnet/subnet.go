@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/minio/console/pkg/http"
+	"github.com/GuinsooLab/console/pkg/http"
 
 	"github.com/minio/pkg/licverifier"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 	"github.com/minio/madmin-go"
 	mc "github.com/minio/mc/cmd"
 	"github.com/tidwall/gjson"

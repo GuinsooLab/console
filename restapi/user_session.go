@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"time"
 
-	policies "github.com/minio/console/restapi/policy"
+	policies "github.com/GuinsooLab/console/restapi/policy"
 	"github.com/minio/madmin-go"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
@@ -32,11 +32,11 @@ import (
 	minioIAMPolicy "github.com/minio/pkg/iam/policy"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/pkg/auth/ldap"
-	"github.com/minio/console/restapi/operations"
-	authApi "github.com/minio/console/restapi/operations/auth"
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/pkg/auth/idp/oauth2"
+	"github.com/GuinsooLab/console/pkg/auth/ldap"
+	"github.com/GuinsooLab/console/restapi/operations"
+	authApi "github.com/GuinsooLab/console/restapi/operations/auth"
 )
 
 type Conditions struct {

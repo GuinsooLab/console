@@ -19,15 +19,15 @@ package restapi
 import (
 	"context"
 
+	"github.com/GuinsooLab/console/pkg/utils"
+	"github.com/GuinsooLab/console/restapi/operations"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/console/restapi/operations"
 	"github.com/minio/madmin-go"
 
-	groupApi "github.com/minio/console/restapi/operations/group"
+	groupApi "github.com/GuinsooLab/console/restapi/operations/group"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 func registerGroupsHandlers(api *operations.ConsoleAPI) {

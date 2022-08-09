@@ -35,22 +35,22 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/console/pkg/logger"
-	"github.com/minio/console/pkg/utils"
+	"github.com/GuinsooLab/console/pkg/logger"
+	"github.com/GuinsooLab/console/pkg/utils"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 
 	"github.com/klauspost/compress/gzhttp"
 
-	portal_ui "github.com/minio/console/portal-ui"
+	portal_ui "github.com/GuinsooLab/console/portal-ui"
 	"github.com/minio/pkg/env"
 	"github.com/minio/pkg/mimedb"
 	xnet "github.com/minio/pkg/net"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/pkg/auth"
+	"github.com/GuinsooLab/console/restapi/operations"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/restapi/operations"
 	"github.com/unrolled/secure"
 )
 

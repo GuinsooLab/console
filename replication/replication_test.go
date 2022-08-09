@@ -28,8 +28,8 @@ import (
 	"time"
 
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/restapi"
-	"github.com/minio/console/restapi/operations"
+	"github.com/GuinsooLab/console/restapi"
+	"github.com/GuinsooLab/console/restapi/operations"
 )
 
 var token string

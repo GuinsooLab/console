@@ -320,7 +320,7 @@ const Groups = ({ classes }: IGroupsProps) => {
                         A group can have one attached IAM policy, where all
                         users with membership in that group inherit that policy.
                         Groups support more simplified management of user
-                        permissions on the MinIO Tenant.
+                        permissions on the Annastore Tenant.
                         <br />
                         <br />
                         You can learn more at our{" "}
@@ -354,7 +354,7 @@ const Groups = ({ classes }: IGroupsProps) => {
                         A group can have one attached IAM policy, where all
                         users with membership in that group inherit that policy.
                         Groups support more simplified management of user
-                        permissions on the MinIO Tenant.
+                        permissions on the Annastore Tenant.
                         <SecureComponent
                           resource={CONSOLE_UI_RESOURCE}
                           scopes={[

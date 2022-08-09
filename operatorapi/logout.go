@@ -19,12 +19,12 @@ package operatorapi
 import (
 	"net/http"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/operatorapi/operations"
+	authApi "github.com/GuinsooLab/console/operatorapi/operations/auth"
+	"github.com/GuinsooLab/console/restapi"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
-	authApi "github.com/minio/console/operatorapi/operations/auth"
-	"github.com/minio/console/restapi"
 )
 
 func registerLogoutHandlers(api *operations.OperatorAPI) {
