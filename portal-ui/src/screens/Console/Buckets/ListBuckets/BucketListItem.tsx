@@ -127,6 +127,7 @@ const styles = (theme: Theme) =>
       padding: 0,
       margin: 0,
       fontSize: 22,
+      color: theme.palette.primary.main,
     },
     bucketIcon: {
       "& .min-icon": {
@@ -219,7 +220,12 @@ const BucketListItem = ({
                     />
                   </div>
                 )}
-                <h1 className={classes.bucketName}>{bucket.name}</h1>
+                <Link
+                  to={`/buckets/${bucket.name}/admin`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <h1 className={classes.bucketName}>{bucket.name}</h1>
+                </Link>
               </Grid>
               <Grid item xs={12}>
                 <Grid container className={classes.bucketInfo}>

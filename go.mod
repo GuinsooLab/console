@@ -31,7 +31,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/rs/xid v1.4.0
 	github.com/secure-io/sio-go v0.3.1
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.8.0
 	github.com/tidwall/gjson v1.14.0
 	github.com/unrolled/secure v1.10.0
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
