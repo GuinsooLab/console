@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/GuinsooLab/console/models"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
 	mc "github.com/minio/mc/cmd"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7"

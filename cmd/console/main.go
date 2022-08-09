@@ -23,8 +23,8 @@ import (
 	"sort"
 	"time"
 
+	"github.com/GuinsooLab/console/pkg"
 	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
 	"github.com/minio/pkg/console"
 	"github.com/minio/pkg/trie"
 	"github.com/minio/pkg/words"
@@ -97,7 +97,7 @@ func newApp(name string) *cli.App {
 	app := cli.NewApp()
 	app.Name = name
 	app.Version = pkg.Version + " - " + pkg.ShortCommitID
-	app.Author = "MinIO, Inc."
+	app.Author = "MinIO, Inc. x GuinsooLab"
 	app.Usage = "GuinsooLab Console Server"
 	app.Description = `GuinsooLab Console Server`
 	app.Copyright = "(c) 2020-2022 GuinsooLab, Inc."
@@ -126,6 +126,8 @@ func main() {
 	args := os.Args
 	// Set the orchestrator app name.
 	appName := filepath.Base(args[0])
+	println(args)
+	println(appName)
 	// Run the app - exit on error.
 	if err := newApp(appName).Run(args); err != nil {
 		os.Exit(1)

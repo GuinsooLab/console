@@ -25,10 +25,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/minio/console/pkg/logger"
+	"github.com/GuinsooLab/console/pkg/logger"
 
+	"github.com/GuinsooLab/console/restapi"
 	"github.com/minio/cli"
-	"github.com/minio/console/restapi"
 )
 
 var appCmds = []cli.Command{

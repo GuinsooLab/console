@@ -20,12 +20,12 @@ import (
 	"context"
 	"fmt"
 
-	errors "github.com/minio/console/restapi"
+	errors "github.com/GuinsooLab/console/restapi"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/operatorapi/operations"
+	authApi "github.com/GuinsooLab/console/operatorapi/operations/auth"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/operatorapi/operations"
-	authApi "github.com/minio/console/operatorapi/operations/auth"
 )
 
 func registerSessionHandlers(api *operations.OperatorAPI) {

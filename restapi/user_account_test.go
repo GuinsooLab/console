@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/minio/console/models"
-	accountApi "github.com/minio/console/restapi/operations/account"
+	"github.com/GuinsooLab/console/models"
+	accountApi "github.com/GuinsooLab/console/restapi/operations/account"
 	"github.com/stretchr/testify/assert"
 )
 

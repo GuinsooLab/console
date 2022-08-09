@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/cluster"
-	gkev1beta2 "github.com/minio/console/pkg/apis/networking.gke.io/v1beta2"
-	gkeClientset "github.com/minio/console/pkg/clientgen/clientset/versioned"
+	"github.com/GuinsooLab/console/cluster"
+	gkev1beta2 "github.com/GuinsooLab/console/pkg/apis/networking.gke.io/v1beta2"
+	gkeClientset "github.com/GuinsooLab/console/pkg/clientgen/clientset/versioned"
 	corev1 "k8s.io/api/core/v1"
 	extensionsBeta1 "k8s.io/api/extensions/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

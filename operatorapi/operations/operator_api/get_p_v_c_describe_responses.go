@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // GetPVCDescribeOKCode is the HTTP code returned for type GetPVCDescribeOK

@@ -33,8 +33,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/token"
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/pkg/auth/token"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/secure-io/sio-go/sioutil"
 	"golang.org/x/crypto/chacha20"

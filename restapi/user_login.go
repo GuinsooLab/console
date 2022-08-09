@@ -23,13 +23,13 @@ import (
 	"github.com/minio/madmin-go"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/pkg/auth"
+	"github.com/GuinsooLab/console/pkg/auth/idp/oauth2"
+	"github.com/GuinsooLab/console/restapi/operations"
+	authApi "github.com/GuinsooLab/console/restapi/operations/auth"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/console/restapi/operations"
-	authApi "github.com/minio/console/restapi/operations/auth"
 )
 
 func registerLoginHandlers(api *operations.ConsoleAPI) {

@@ -20,8 +20,8 @@ import (
 	"context"
 	"errors"
 
+	"github.com/GuinsooLab/console/models"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
 	"github.com/minio/madmin-go"
 	"github.com/minio/minio-go/v7"
 )

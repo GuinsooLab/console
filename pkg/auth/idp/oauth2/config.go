@@ -21,7 +21,7 @@ package oauth2
 import (
 	"strings"
 
-	"github.com/minio/console/pkg/auth/utils"
+	"github.com/GuinsooLab/console/pkg/auth/utils"
 	"github.com/minio/pkg/env"
 )
 

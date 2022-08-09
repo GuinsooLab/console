@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // TenantUpdateCertificateHandlerFunc turns a function with the right signature into a tenant update certificate handler

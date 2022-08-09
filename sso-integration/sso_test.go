@@ -30,9 +30,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/GuinsooLab/console/restapi"
+	"github.com/GuinsooLab/console/restapi/operations"
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/restapi"
-	"github.com/minio/console/restapi/operations"
 	"github.com/stretchr/testify/assert"
 )
 

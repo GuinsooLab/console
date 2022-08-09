@@ -19,7 +19,7 @@ package logger
 import (
 	"context"
 
-	"github.com/minio/console/pkg/logger/target/http"
+	"github.com/GuinsooLab/console/pkg/logger/target/http"
 )
 
 // Audit/Logger constants

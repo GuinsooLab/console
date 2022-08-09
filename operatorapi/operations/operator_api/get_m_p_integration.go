@@ -30,7 +30,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // GetMPIntegrationHandlerFunc turns a function with the right signature into a get m p integration handler

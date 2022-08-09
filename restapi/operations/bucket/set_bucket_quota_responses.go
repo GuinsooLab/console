@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // SetBucketQuotaOKCode is the HTTP code returned for type SetBucketQuotaOK

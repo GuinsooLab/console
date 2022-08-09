@@ -20,9 +20,9 @@ import (
 	"context"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	siteRepApi "github.com/minio/console/restapi/operations/site_replication"
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/restapi/operations"
+	siteRepApi "github.com/GuinsooLab/console/restapi/operations/site_replication"
 	"github.com/minio/madmin-go"
 )
 

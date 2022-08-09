@@ -21,11 +21,11 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/GuinsooLab/console/models"
+	"github.com/GuinsooLab/console/restapi/operations"
+	profileApi "github.com/GuinsooLab/console/restapi/operations/profile"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/models"
-	"github.com/minio/console/restapi/operations"
-	profileApi "github.com/minio/console/restapi/operations/profile"
 	"github.com/minio/madmin-go"
 )
 

@@ -27,7 +27,7 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/minio/console/models"
+	"github.com/GuinsooLab/console/models"
 )
 
 // ListAUserServiceAccountsHandlerFunc turns a function with the right signature into a list a user service accounts handler
