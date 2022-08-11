@@ -22,8 +22,8 @@ export default function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://min.io/?ref=con">
-        MinIO
+      <Link color="inherit" href="https://ciusji.gitbook.io/guinsoolab/">
+          AnnaStore
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}

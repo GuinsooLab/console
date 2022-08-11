@@ -82,7 +82,7 @@ const AddPolicyHelpBox = () => {
             description={`Create Policies`}
           />
           <Box sx={{ paddingTop: "20px" }}>
-            MinIO uses Policy-Based Access Control (PBAC) to define the
+              AnnaStore uses Policy-Based Access Control (PBAC) to define the
             authorized actions and resources to which an authenticated user has
             access. Each policy describes one or more actions and conditions
             that outline the permissions of a user or group of users.{" "}
