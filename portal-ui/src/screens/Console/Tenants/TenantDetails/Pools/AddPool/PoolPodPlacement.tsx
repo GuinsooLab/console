@@ -267,7 +267,7 @@ const Affinity = ({ classes }: IAffinityProps) => {
           <div
             className={`${classes.descriptionText} ${classes.affinityHelpText}`}
           >
-            MinIO supports multiple configurations for Pod Affinity
+            AnnaStore supports multiple configurations for Pod Affinity
           </div>
           <Grid item className={classes.radioField}>
             <RadioGroupSelector

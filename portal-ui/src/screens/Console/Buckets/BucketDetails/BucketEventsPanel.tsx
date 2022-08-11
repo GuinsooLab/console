@@ -206,9 +206,9 @@ const BucketEventsPanel = ({ classes }: IBucketEventsProps) => {
               iconComponent={<LambdaIcon />}
               help={
                 <Fragment>
-                  MinIO bucket notifications allow administrators to send
+                  AnnaStore bucket notifications allow administrators to send
                   notifications to supported external services on certain object
-                  or bucket events. MinIO supports bucket and object-level S3
+                  or bucket events. AnnaStore supports bucket and object-level S3
                   events similar to the Amazon S3 Event Notifications.
                   <br />
                   <br />
