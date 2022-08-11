@@ -397,10 +397,10 @@ const ListTiersConfiguration = ({ classes }: IListTiersConfig) => {
                         iconComponent={<TiersIcon />}
                         help={
                           <Fragment>
-                            Tiers are used by the MinIO Object Lifecycle
+                            Tiers are used by the AnnaStore Object Lifecycle
                             Management which allows creating rules for time or
                             date based automatic transition or expiry of
-                            objects. For object transition, MinIO automatically
+                            objects. For object transition, AnnaStore automatically
                             moves the object to a configured remote storage
                             tier.
                             <br />
@@ -433,10 +433,10 @@ const ListTiersConfiguration = ({ classes }: IListTiersConfig) => {
                         iconComponent={<TiersIcon />}
                         help={
                           <Fragment>
-                            Tiers are used by the MinIO Object Lifecycle
+                            Tiers are used by the AnnaStore Object Lifecycle
                             Management which allows creating rules for time or
                             date based automatic transition or expiry of
-                            objects. For object transition, MinIO automatically
+                            objects. For object transition, AnnaStore automatically
                             moves the object to a configured remote storage
                             tier.
                             <br />
