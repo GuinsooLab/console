@@ -97,10 +97,10 @@ func newApp(name string) *cli.App {
 	app := cli.NewApp()
 	app.Name = name
 	app.Version = pkg.Version + " - " + pkg.ShortCommitID
-	app.Author = "MinIO, Inc. x GuinsooLab"
-	app.Usage = "GuinsooLab Console Server"
+	app.Author = "GuinsooLab"
+	app.Usage = "GuinsooLab Console"
 	app.Description = `GuinsooLab Console Server`
-	app.Copyright = "(c) 2020-2022 GuinsooLab, Inc."
+	app.Copyright = "(c) 2020-2022 GuinsooLab"
 	app.Compiled, _ = time.Parse(time.RFC3339, pkg.ReleaseTime)
 	app.Commands = commands
 	app.HideHelpCommand = true // Hide `help, h` command, we already have `minio --help`.
