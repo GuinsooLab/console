@@ -277,8 +277,8 @@ const Account = () => {
             iconComponent={<AccountIcon />}
             help={
               <Fragment>
-                MinIO service accounts are child identities of an authenticated
-                MinIO user, including externally managed identities. Each
+                AnnaStore service accounts are child identities of an authenticated
+                AnnaStore user, including externally managed identities. Each
                 service account inherits its privileges based on the policies
                 attached to it’s parent user or those groups in which the parent
                 user has membership. Service accounts also support an optional
@@ -288,7 +288,7 @@ const Account = () => {
                 <br />
                 You can learn more at our{" "}
                 <a
-                  href="https://docs.min.io/minio/baremetal/security/minio-identity-management/user-management.html?ref=con#service-accounts"
+                  href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore/deployment-and-management/service-account"
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -243,7 +243,7 @@ const ListPolicies = ({ classes }: IPoliciesProps) => {
                   <br />
                   You can learn more at our{" "}
                   <a
-                    href="https://docs.min.io/minio/baremetal/security/minio-identity-management/policy-based-access-control.html?ref=con"
+                    href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore"
                     target="_blank"
                     rel="noreferrer"
                   >

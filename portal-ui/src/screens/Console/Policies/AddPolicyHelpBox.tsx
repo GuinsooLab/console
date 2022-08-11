@@ -89,12 +89,12 @@ const AddPolicyHelpBox = () => {
           </Box>
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>
-          MinIO PBAC is built for compatibility with AWS IAM policy syntax,
+          AnnaStore PBAC is built for compatibility with AWS IAM policy syntax,
           structure, and behavior.
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>
           Each user can access only those resources and operations which are
-          explicitly granted by the built-in role. MinIO denies access to any
+          explicitly granted by the built-in role. AnnaStore denies access to any
           other resource or action by default.
         </Box>
       </Box>

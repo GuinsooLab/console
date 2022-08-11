@@ -325,7 +325,7 @@ const Groups = ({ classes }: IGroupsProps) => {
                         <br />
                         You can learn more at our{" "}
                         <a
-                          href="https://docs.min.io/minio/k8s/tutorials/group-management.html?ref=con"
+                          href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore"
                           target="_blank"
                           rel="noreferrer"
                         >

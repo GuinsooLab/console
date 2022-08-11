@@ -85,7 +85,7 @@ const AddUserHelpBox = () => {
         An AnnaStore user consists of a unique access key (username) and
         corresponding secret key (password). Clients must authenticate their
         identity by specifying both a valid access key (username) and the
-        corresponding secret key (password) of an existing MinIO user.
+        corresponding secret key (password) of an existing AnnaStore user.
         <br />
         <br />
         Each user can have one or more assigned policies that explicitly list
