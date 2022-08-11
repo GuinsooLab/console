@@ -11,7 +11,7 @@
 
 # GuinsooLab Console
 
-![build](https://github.com/GuinsooLab/console/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
+![size](https://img.shields.io/github/languages/code-size/GuinsooLab/console) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
 
 A graphical user interface for [GuinsooLab](https://guinsoolab.github.io/glab/).
 
