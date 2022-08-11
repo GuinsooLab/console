@@ -116,3 +116,5 @@ pycodestyle*.py
 .vscode
 
 portal-ui/build/*
+
+console
