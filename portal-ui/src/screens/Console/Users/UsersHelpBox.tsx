@@ -93,7 +93,7 @@ const UsersHelpBox = () => {
           An AnnaStore user consists of a unique access key (username) and
           corresponding secret key (password). Clients must authenticate their
           identity by specifying both a valid access key (username) and the
-          corresponding secret key (password) of an existing MinIO user.
+          corresponding secret key (password) of an existing AnnaStore user.
           <br />
         </Box>
         <FeatureItem icon={<GroupsIcon />} description={`Manage Groups`} />
@@ -111,7 +111,7 @@ const UsersHelpBox = () => {
           description={`Assign Policies`}
         />
         <Box sx={{ fontSize: "14px", marginBottom: "15px" }}>
-          MinIO uses Policy-Based Access Control (PBAC) to define the authorized
+            AnnaStore uses Policy-Based Access Control (PBAC) to define the authorized
           actions and resources to which an authenticated user has access. Each
           policy describes one or more actions and conditions that outline the
           permissions of a user or group of users.

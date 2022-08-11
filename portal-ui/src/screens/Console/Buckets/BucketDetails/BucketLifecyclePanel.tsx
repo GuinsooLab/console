@@ -328,7 +328,7 @@ const BucketLifecyclePanel = ({ classes }: IBucketLifecyclePanelProps) => {
                   <br />
                   You can learn more at our{" "}
                   <a
-                    href="https://docs.min.io/minio/baremetal/lifecycle-management/lifecycle-management-overview.html?ref=con"
+                    href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore"
                     target="_blank"
                     rel="noreferrer"
                   >

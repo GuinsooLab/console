@@ -346,7 +346,7 @@ const BucketReplicationPanel = ({ classes }: IBucketReplicationProps) => {
                 <br />
                 You can learn more at our{" "}
                 <a
-                  href="https://docs.min.io/minio/baremetal/replication/replication-overview.html?ref=con"
+                  href="https://ciusji.gitbook.io/guinsoolab/products/data-storage/annastore"
                   target="_blank"
                   rel="noreferrer"
                 >

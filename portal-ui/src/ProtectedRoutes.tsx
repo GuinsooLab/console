@@ -64,7 +64,7 @@ const ProtectedRoute = ({ Component }: ProtectedRouteProps) => {
         // check for tenants presence, that indicates we are in operator mode
         if (res.operator) {
           dispatch(operatorMode(true));
-          document.title = "MinIO Operator";
+          document.title = "AnnaStore Operator";
         }
       })
       .catch(() => setSessionLoading(false));

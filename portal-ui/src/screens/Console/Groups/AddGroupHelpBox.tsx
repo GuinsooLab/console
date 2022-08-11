@@ -88,7 +88,7 @@ const AddGroupHelpBox = () => {
         <Box sx={{ paddingTop: "10px", paddingBottom: "10px" }}>
           Groups provide a simplified method for managing shared permissions
           among users with common access patterns and workloads. Client’s cannot
-          authenticate to a MinIO deployment using a group as an identity.
+          authenticate to a AnnaStore deployment using a group as an identity.
         </Box>
       </Box>
 

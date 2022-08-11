@@ -1,5 +1,5 @@
 // This file is part of GuinsooLab Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// Copyright (c) 2022 GuinsooLab.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -19,10 +19,10 @@ package restapi
 import (
 	"context"
 
-	"github.com/go-openapi/runtime/middleware"
 	"github.com/GuinsooLab/console/models"
 	"github.com/GuinsooLab/console/restapi/operations"
 	systemApi "github.com/GuinsooLab/console/restapi/operations/system"
+	"github.com/go-openapi/runtime/middleware"
 )
 
 func registerNodesHandler(api *operations.ConsoleAPI) {

@@ -1,5 +1,5 @@
 // This file is part of GuinsooLab Console Server
-// Copyright (c) 2022 MinIO, Inc.
+// Copyright (c) 2022 GuinsooLab.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-openapi/loads"
 	"github.com/GuinsooLab/console/restapi"
 	"github.com/GuinsooLab/console/restapi/operations"
+	"github.com/go-openapi/loads"
 )
 
 var token string

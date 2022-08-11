@@ -44,7 +44,7 @@ import (
 var operatorCmd = cli.Command{
 	Name:    "operator",
 	Aliases: []string{"opr"},
-	Usage:   "Start MinIO Operator UI server",
+	Usage:   "Start AnnaStore Operator UI server",
 	Action:  startOperatorServer,
 	Flags: []cli.Flag{
 		cli.StringFlag{
