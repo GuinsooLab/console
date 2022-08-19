@@ -340,7 +340,7 @@ const BucketReplicationPanel = ({ classes }: IBucketReplicationProps) => {
             iconComponent={<BucketsIcon />}
             help={
               <Fragment>
-                MinIO supports server-side and client-side replication of
+                AnnaStore supports server-side and client-side replication of
                 objects between source and destination buckets.
                 <br />
                 <br />

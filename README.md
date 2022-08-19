@@ -214,6 +214,10 @@ You can verify that the apis work by doing the request on `localhost:9090/api/v1
 
 ## Screenshots & Gifs
 
+### Unified Login With [KeyCloak](https://www.keycloak.org/)
+
+![sso-login](assets/sso-login.png)
+
 ### Console SQL pad
 
 ![console-sqlpad](assets/console-sqlpad.png)

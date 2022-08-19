@@ -320,9 +320,9 @@ const BucketLifecyclePanel = ({ classes }: IBucketLifecyclePanelProps) => {
               iconComponent={<TiersIcon />}
               help={
                 <Fragment>
-                  MinIO Object Lifecycle Management allows creating rules for
+                  AnnaStore Object Lifecycle Management allows creating rules for
                   time or date based automatic transition or expiry of objects.
-                  For object transition, MinIO automatically moves the object to
+                  For object transition, AnnaStore automatically moves the object to
                   a configured remote storage tier.
                   <br />
                   <br />
