@@ -19,17 +19,9 @@ import Toolbar from './Toolbar';
 import UnsavedQuerySelector from './UnsavedQuerySelector';
 import styles from './ConnectionDropdown.module.css';
 
-import GuinsooLabIcon from "../images/guinsoolab.svg";
-import DiscoveryIcon from "../images/discovery.svg";
-import QueryIcon from "../images/query.svg";
-import StorageIcon from "../images/storage.svg";
-import ProcessIcon from "../images/process.svg";
-import FlowIcon from "../images/flow.svg";
-import ObservabilityIcon from "../images/observe.svg";
+import LogoIcon from "../images/SQLPadLogo.svg";
 import SqlPadIcon from "../images/sqlpad.svg";
-import MarketIcon from "../images/Apps.svg";
 import SettingIcon from "../images/Settting.svg";
-import LineIcon from "../images/Line.svg";
 import TerminalIcon from "../images/terminal.svg";
 import HelpIcon from "../images/Help.svg";
 
@@ -101,36 +93,12 @@ function QueryEditor() {
       <NotFoundModal visible={showNotFound} queryId={queryId} />
       <EditorNavProtection />
       <div className={styles.appNav}>
-        <img src={GuinsooLabIcon} width={60} height={47} alt="logo" />
+        <img src={LogoIcon} width={60} height={47} alt="logo" />
         <ul className={styles.appNavUl}>
           <li className={styles.appNavLi}
             onClick={() => window.open("http://localhost:3000/sqlpad/queries/new")}
           >
             <img className={styles.appNavImg} src={SqlPadIcon} alt="data-pad"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={DiscoveryIcon} alt="data-discovery"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={QueryIcon} alt="data-query"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={StorageIcon} alt="data-storage"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={ProcessIcon} alt="data-process"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={FlowIcon} alt="data-flow"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={ObservabilityIcon} alt="data-observability"/>
-          </li>
-          <li style={{height: 20, listStyle: "none"}}>
-            <img className={styles.appNavImg} src={LineIcon} style={{width: 40, padding: 0, height: 1}} alt="line"/>
-          </li>
-          <li className={styles.appNavLi}>
-            <img className={styles.appNavImg} src={MarketIcon} alt="data-market"/>
           </li>
           <li className={styles.appNavLi}>
             <img className={styles.appNavImg} src={TerminalIcon} alt="data-terminal"/>
