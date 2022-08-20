@@ -17,7 +17,7 @@ function SignIn() {
   const { config } = useAppContext();
 
   useEffect(() => {
-    document.title = 'SQLPad - Sign In | GuisoooLab';
+    document.title = 'Sign In - SQLPad';
   }, []);
 
   const signIn = async (e: React.FormEvent) => {
@@ -180,7 +180,7 @@ function SignIn() {
             </svg>
           </div>
           <div style={{textAlign: "left", color: "rgb(8, 28, 66)", marginTop: 4}}>
-            Console for GuinsooLab
+            <b style={{fontWeight: 700}}>SQLPad</b> | Powered by GuinsooLab Console
           </div>
         </div>
         <div style={{backgroundColor: "#ffffff", padding: "40px", color: "rgb(8, 28, 66)"}}>
@@ -203,7 +203,7 @@ function SignIn() {
             >
               Learn more about CONSOLE
             </a>
-            <a href="" style={{
+            <a href="https://ciusji.gitbook.io/guinsoolab/products/console" style={{
               color: "rgb(39, 129, 176)",
               font: "bold 12px / 15px Lato",
               textDecoration: "none",
