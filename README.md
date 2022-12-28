@@ -1,9 +1,9 @@
 <div align="right">
-    <img src="assets/guinsoolab-badge.png" width="60" alt="badge">
+    <img src="https://raw.githubusercontent.com/GuinsooLab/console/main/assets/guinsoolab-badge.png" width="60" alt="badge">
     <br />
 </div>
 <div align="center">
-   <img src="assets/guinsoolab-console.svg" width="80" alt="console"/>
+   <img src="https://raw.githubusercontent.com/GuinsooLab/console/main/assets/guinsoolab-console.svg" width="80" alt="console"/>
    <br/>
    <small>Management UI for GuinsooLab</small>
 </div>
@@ -11,35 +11,17 @@
 
 # GuinsooLab Console
 
-![build](https://github.com/GuinsooLab/console/workflows/Go/badge.svg) ![license](https://img.shields.io/badge/license-AGPL%20V3-blue)
-
 A graphical user interface for [GuinsooLab](https://guinsoolab.github.io/glab/).
 
-![architecutre](assets/gdp-new.svg)
+![Overview](https://raw.githubusercontent.com/GuinsooLab/console/main/assets/sso-login.png)
 
 ## Install
-
-### Binary Releases
-
-| OS      | ARCH    | Binary                                                         |
-|:-------:|:-------:|:-----------------------------------------------------:|
-| Linux   | amd64   | [linux-amd64](https://ciusji.gitbook.io/guinsoolab/)         |
-| Linux   | arm64   | [linux-arm64](https://ciusji.gitbook.io/guinsoolab/)         |
-| Linux   | ppc64le | [linux-ppc64le](https://ciusji.gitbook.io/guinsoolab/)     |
-| Linux   | s390x   | [linux-s390x](https://ciusji.gitbook.io/guinsoolab/)         |
-| Apple   | amd64   | [darwin-amd64](https://ciusji.gitbook.io/guinsoolab/)       |
-| Windows | amd64   | [windows-amd64](https://ciusji.gitbook.io/guinsoolab/) |
-
-You can also verify the binary with [minisign](https://jedisct1.github.io/minisign/) by downloading the corresponding `.minisig` signature file. Then run:
-```
-minisign -Vm console-<OS>-<ARCH> -P RWTx5Zr1tiHQLwG9keckT0c45M3AGeHD6IvimQHpyRywVWGbP1aVSGav
-```
 
 ### Docker
 
 Pull the latest release via:
 ```
-docker pull guinsoolab/console
+docker pull guinsoolab/console (coming)
 ```
 
 ### Build from source
@@ -56,7 +38,7 @@ yarn start
 
 ## Setup
 
-All `console` needs is a GuinsooLab user with admin privileges and URL pointing to your GuinsooLab deployment.
+All `console` needs is a `GuinsooLab` user with admin privileges and URL pointing to your GuinsooLab deployment.
 
 > Note: We don't recommend using GuinsooLab's Operator Credentials
 
@@ -148,6 +130,26 @@ mc admin policy set myGuinsooLab ConsoleAdmin user=console
 }
 ```
 
+## Documentation
+
+- Productions
+  - [Data Discovery](https://ciusji.gitbook.io/guinsoolab/products/data-discovery)
+  - [Query Engine](https://ciusji.gitbook.io/guinsoolab/products/query-engine)
+  - [Data Storage](https://ciusji.gitbook.io/guinsoolab/products/data-storage)
+  - [Process Engine](https://ciusji.gitbook.io/guinsoolab/products/process-engine)
+  - [Data Flow](https://ciusji.gitbook.io/guinsoolab/products/data-flow)
+  - [Data Observability](https://ciusji.gitbook.io/guinsoolab/products/data-observability)
+- BI-Tools
+  - [Spotrix](https://ciusji.gitbook.io/guinsoolab/bi-tools/spotrix)
+  - [IreliaTable](https://ciusji.gitbook.io/guinsoolab/bi-tools/ireliatable)
+  - [ElixirNote](https://ciusji.gitbook.io/guinsoolab/bi-tools/elixirnote)
+  - [JhinBoard](https://ciusji.gitbook.io/guinsoolab/bi-tools/jhinboard)
+- Solutions
+  - [GuinsooLab Console](https://ciusji.gitbook.io/guinsoolab/solutions/guinsoolab-console)
+  - [GuinsooLab Finance](https://ciusji.gitbook.io/guinsoolab/solutions/guinsoolab-finance)
+  - [GuinsooLab Infrastructure](https://ciusji.gitbook.io/guinsoolab/solutions/guinsoolab-infrastructure)
+  - [GuinsooLab Next-Gen BI](https://ciusji.gitbook.io/guinsoolab/solutions/guinsoolab-nextgen-bi)
+
 ## Start Console service
 
 Before running console service, following environment settings must be supplied
@@ -200,33 +202,6 @@ Following tree structure is expected for supporting multiple domains:
   ...
 
 ```
-
-## Connect Console to An AnnaStore using TLS and a self-signed certificate
-
-Copy the AnnaStore `ca.crt` under `~/.console/certs/CAs`, then:
-
-```sh
-export CONSOLE_GUINSOOLAB_SERVER=https://localhost:9000
-./console server
-```
-
-You can verify that the apis work by doing the request on `localhost:9090/api/v1/...`
-
-## Screenshots & Gifs
-
-### Unified Login With [KeyCloak](https://www.keycloak.org/)
-
-![sso-login](assets/sso-login.png)
-
-### Console SQL pad
-
-![console-sqlpad](assets/console-sqlpad.png)
-
-### Console AnnaStore
-
-![console-annastore](assets/cnosole-annastore.png)
-
-And others coming.
 
 ## Contribute to console Project
 Please follow console [Contributor's Guide](https://ciusji.gitbook.io/guinsoolab/appendix/contribution)
